@@ -4,7 +4,20 @@
  - Download [QLC+](https://qlcplus.org/) v4.13.1
  - Launch using the -w option, i.e. ``C:\QLC+\qlcplus.exe -w`` to enable web interface
 
-### Add Lighting Fixtures
+### 1.) Add Lighting Fixtures
+
+The first step is to tell QLC+ about the lighting fixtures that you want to control. 
+Every fixture has different functions, which are mapped to different DMX channels. An RGB PAR can might use 3 channels, for Red, Green, and Blue. A strobe light might use 2 channels - for intensity and speed. A moving spotlight might use channels for pan, tilt, and speed, etc.  
+QLC+ comes with a predefined set of common lighting fixtures, and if your lights appear in that list you can simply select them from there. 
+If not, you can use the standalone QLC Fixture Editor to add the parameters of your light fixture. You will need to refer to the instructions supplied by the manufacturer to identify the correct mode and channel functions. Save the fixture in the ``C:\Users\%USERNAME%\QLC+\Fixtures`` directory.
+
+``` Note: Many cheap, generic lights advertised by companies such as "Leleght" on Amazon, are actually rebranded versions of UKing lights. If you cannot find your light in the list and do not have a manual for it, try searching for a UKing model that looks the same at https://www.uking-online.com/product-categories/ and then download the corresponding product manual from https://www.uking-online.com/get-started/manuals/ ```
+
+#### My Lighting Fixtures
+
+For reference, here are the lighting fixtures I use:
+Description | Quantity | 
+
  - 4× UKing Par36 https://www.amazon.co.uk/U%60King-Console-Control-Wedding-Concert/dp/B09JJW6SWL/
  - 1× Donner Pin Spot RGBW 10W https://www.amazon.co.uk/gp/product/B07XM57FPV
  - 1× UV Can https://www.amazon.co.uk/DMX512-Control-Activated-Lighting-Theater/dp/B07YD6P289/

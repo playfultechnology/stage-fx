@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.13.1</Version>
+  <Author>Playful Technology</Author>
+ </Creator>
+ <Manufacturer>UKing</Manufacturer>
+ <Model>ZQ06074</Model>
+ <Type>LED Bar (Pixels)</Type>
+ <Channel Name="Red" Preset="IntensityRed"/>
+ <Channel Name="Green" Preset="IntensityGreen"/>
+ <Channel Name="Blue" Preset="IntensityBlue"/>
+ <Channel Name="Master dimmer" Preset="IntensityMasterDimmer"/>
+ <Mode Name="3 Channel Mode (C)">
+  <Channel Number="0" ActsOn="0">Red</Channel>
+  <Channel Number="1" ActsOn="1">Green</Channel>
+  <Channel Number="2" ActsOn="2">Blue</Channel>
+ </Mode>
+ <Mode Name="4 Channel Mode (d)">
+  <Channel Number="0" ActsOn="0">Master dimmer</Channel>
+  <Channel Number="1" ActsOn="1">Red</Channel>
+  <Channel Number="2" ActsOn="2">Green</Channel>
+  <Channel Number="3" ActsOn="3">Blue</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="2.38" Width="40" Height="18" Depth="8"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Layout Width="12" Height="4"/>
+  <Technical PowerConsumption="80" DmxConnector="3-pin"/>
+ </Physical>
+</FixtureDefinition>
