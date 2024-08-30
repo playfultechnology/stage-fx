@@ -16,9 +16,15 @@ If not, you can use the standalone QLC Fixture Editor to add the parameters of y
 #### My Lighting Fixtures
 
 For reference, here are the lighting fixtures I use:
-Description | Quantity | 
 
- - 4× UKing Par36 https://www.amazon.co.uk/U%60King-Console-Control-Wedding-Concert/dp/B09JJW6SWL/
+| Description | Quantity | Fixture Definition |
+| ----------- | -------- | ------------------ |
+| UKing Par36 |    4     | 
+
+
+
+
+ https://www.amazon.co.uk/U%60King-Console-Control-Wedding-Concert/dp/B09JJW6SWL/
  - 1× Donner Pin Spot RGBW 10W https://www.amazon.co.uk/gp/product/B07XM57FPV
  - 1× UV Can https://www.amazon.co.uk/DMX512-Control-Activated-Lighting-Theater/dp/B07YD6P289/
  - 3× Betopper LM70 moving head  https://www.amazon.co.uk/gp/product/B074FFJ165
@@ -27,3 +33,9 @@ Description | Quantity |
  - 1×32Ch DMX Dimmer https://www.amazon.co.uk/gp/product/B075FHJM35/
 
 192Ch DMX Controller (Chauvet Obey clone)  https://www.amazon.co.uk/gp/product/B0C5T762N6
+
+
+
+### Controlling other stuff
+ - https://robertoostenveld.nl/art-net-to-dmx512-with-esp8266/
+ - WLED: https://kno.wled.ge/interfaces/dmx-output/
