@@ -19,21 +19,23 @@ For reference, here are the lighting fixtures I use:
 
 | Description | Quantity | Fixture Definition |
 | ----------- | -------- | ------------------ |
-| UKing Par36 |    4     | 
+| [UKing 36LED RGB PARcan ](https://www.amazon.co.uk/U%60King-Console-Control-Wedding-Concert/dp/B09JJW6SWL/) |    4     | UKing Par36 (built-in) |
+| [Donner Pin Spot RGBW 10W](https://www.amazon.co.uk/gp/product/B07XM57FPV) |    1     |  |
+| [Betopper LM70 moving head](https://www.amazon.co.uk/gp/product/B074FFJ165) |  3 | Betopper LM70 (built-in) |
+| [Leleght 80W RGB Wash](https://www.amazon.co.uk/gp/product/B0CFHFKP93) | 1 | |
+| [32Ch Dimmer](https://www.amazon.co.uk/gp/product/B075FHJM35/) | 1 | Generic (built-in) |
 
 
 
-
- https://www.amazon.co.uk/U%60King-Console-Control-Wedding-Concert/dp/B09JJW6SWL/
- - 1× Donner Pin Spot RGBW 10W https://www.amazon.co.uk/gp/product/B07XM57FPV
- - 1× UV Can https://www.amazon.co.uk/DMX512-Control-Activated-Lighting-Theater/dp/B07YD6P289/
- - 3× Betopper LM70 moving head  https://www.amazon.co.uk/gp/product/B074FFJ165
- - 1× Leleght 80W RGB Wash https://www.amazon.co.uk/gp/product/B0CFHFKP93
- - 1× Bubble Machine https://www.amazon.co.uk/gp/product/B095NKTHSJ/
- - 1×32Ch DMX Dimmer https://www.amazon.co.uk/gp/product/B075FHJM35/
-
+#### Controllers
+Entec OpenDMX
+El Cheapo DMX Dongle
 192Ch DMX Controller (Chauvet Obey clone)  https://www.amazon.co.uk/gp/product/B0C5T762N6
 
+
+#### Other Hardware
+ - 1× UV Can https://www.amazon.co.uk/DMX512-Control-Activated-Lighting-Theater/dp/B07YD6P289/
+ - 1× Bubble Machine https://www.amazon.co.uk/gp/product/B095NKTHSJ/
 
 
 ### Controlling other stuff
