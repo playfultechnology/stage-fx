@@ -32,7 +32,10 @@ For reference, here are the lighting fixtures I use:
 
 ### Interfaces / Controllers
  - [Entec OpenDMX](https://www.enttec.co.uk/product/dmx-usb-interfaces/open-dmx-usb/) supported in QLC+ as a DMX USB (OpenTX) Output 
- - [Generic FT232 DMX Dongle](https://www.aliexpress.com/item/1005003738423230.html) supported in QLC+ as a DMX USB (OpenTX) Output 
+ - [Generic FT232 DMX Dongle](https://www.aliexpress.com/item/1005003738423230.html) supported in QLC+ as a DMX USB (OpenTX) Output
+   
+![QLC settings for adding FT232/OpenDMX output](https://github.com/playfultechnology/stage-fx/blob/main/Images/FT232_Dongle_QLC_Input.png)
+
  - [192Ch DMX Controller](https://www.amazon.co.uk/gp/product/B0C5T762N6) (Chauvet Obey clone) standalone DMX controller
  - [ArtNet to DMX interface](https://www.aliexpress.com/item/1005005911108272.html) 
 
