@@ -11,7 +11,6 @@ Every fixture has different functions, which are mapped to different DMX channel
 QLC+ comes with a predefined set of common lighting fixtures, and if your lights appear in that list you can simply select them from there. 
 If not, you can use the standalone QLC Fixture Editor to add the parameters of your light fixture. You will need to refer to the instructions supplied by the manufacturer to identify the correct mode and channel functions. Save the fixture in the ``C:\Users\%USERNAME%\QLC+\Fixtures`` directory.
 
-
 > [!NOTE]
 > Many cheap, generic lights advertised by companies on Amazon etc. are actually rebranded versions of UKing lights. 
 > e.g.
@@ -20,25 +19,27 @@ If not, you can use the standalone QLC Fixture Editor to add the parameters of y
 > 
 > So, if you cannot find your light in the list and do not have a manual for it, try searching for a UKing model that looks the same at https://www.uking-online.com/product-categories/ and then download the corresponding product manual from https://www.uking-online.com/get-started/manuals/
 
-### My Lighting Fixtures
-
+### Fixtures
 For reference, here are the lighting fixtures I use:
 
-| Description | Quantity | Fixture Definition | DMX Channels | Manual |
-| ----------- | -------- | ------------------ | ------------ | ------ |
-| [UKing 36LED RGB PARcan ](https://www.amazon.co.uk/U%60King-Console-Control-Wedding-Concert/dp/B09JJW6SWL/) |    ×4     | UKing Par36 (built-in) | 7Ch | |
-| [Donner Pin Spot RGBW 10W](https://www.amazon.co.uk/gp/product/B07XM57FPV) |    ×1     | UKing ZQ-B93 Pinspot RGBW (built-in) | 6Ch | |
-| [Betopper LM70 moving head](https://www.amazon.co.uk/gp/product/B074FFJ165) |  ×3 | Betopper LM70 (built-in) | 9Ch | |
-| [Leleght 80W RGB Wash](https://www.amazon.co.uk/gp/product/B0CFHFKP93) | ×1 | | 2/4/6/7/12Ch |
-| [32Ch Dimmer](https://www.amazon.co.uk/gp/product/B075FHJM35/) | ×1 | Generic (built-in) | 32Ch | |
+| Description | Quantity | Fixture Definition | DMX Channels | 
+| ----------- | -------- | ------------------ | ------------ | 
+| [UKing 36LED RGB PARcan ](https://www.amazon.co.uk/U%60King-Console-Control-Wedding-Concert/dp/B09JJW6SWL/) |    ×4     | UKing Par36 (built-in) | 7Ch |
+| [Donner Pin Spot RGBW 10W](https://www.amazon.co.uk/gp/product/B07XM57FPV) |    ×1     | UKing ZQ-B93 Pinspot RGBW (built-in) | 6Ch |
+| [Betopper LM70 moving head](https://www.amazon.co.uk/gp/product/B074FFJ165) |  ×3 | Betopper LM70 (built-in) | 9Ch |
+| [Leleght 80W RGB Wash](https://www.amazon.co.uk/gp/product/B0CFHFKP93) | ×1 | [UKing ZQ-06074](https://github.com/playfultechnology/stage-fx/blob/main/QLC%2B/Fixtures/UKing-ZQ06074.qxf) | 2/4/6/7/12Ch |
+| [32Ch Dimmer](https://www.amazon.co.uk/gp/product/B075FHJM35/) | ×1 | Generic (built-in) | 32Ch |
 
+### Interfaces / Controllers
+ - [Entec OpenDMX](https://www.enttec.co.uk/product/dmx-usb-interfaces/open-dmx-usb/) supported in QLC+ as a DMX USB (OpenTX) Output 
+ - [Generic FT232 DMX Dongle](https://www.aliexpress.com/item/1005003738423230.html) supported in QLC+ as a DMX USB (OpenTX) Output 
+ - [192Ch DMX Controller](https://www.amazon.co.uk/gp/product/B0C5T762N6) (Chauvet Obey clone) standalone DMX controller
+ - [ArtNet to DMX interface](https://www.aliexpress.com/item/1005005911108272.html) 
 
-
-#### Controllers
-Entec OpenDMX
-El Cheapo DMX Dongle
-192Ch DMX Controller (Chauvet Obey clone)  https://www.amazon.co.uk/gp/product/B0C5T762N6
-
+### Software
+ - [QLC+](https://qlcplus.org/) Show control software enabling sequencing, live effects of DMX, ArtNet, and sACN fixtures
+ - [WLED](https://kno.wled.ge/) LED animation and control software that exposes ESP8266/ESP32 as an ArtNet/sACN input node
+ - [Jinx!](https://live-leds.de/downloads/) video mapping onto LED strips
 
 #### Other Hardware
  - 1× UV Can https://www.amazon.co.uk/DMX512-Control-Activated-Lighting-Theater/dp/B07YD6P289/
