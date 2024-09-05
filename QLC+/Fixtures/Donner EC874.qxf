@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.0</Version>
+  <Author>Carl Noble</Author>
+ </Creator>
+ <Manufacturer>Donner</Manufacturer>
+ <Model>EC874</Model>
+ <Type>Color Changer</Type>
+ <Channel Name="CH1 Mode/Function">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="8">No Effect</Capability>
+  <Capability Min="9" Max="134">Red Green Blue White light dark to light</Capability>
+  <Capability Min="135" Max="239">Strobe Slow to Fast</Capability>
+  <Capability Min="240" Max="255">Channel 2-5 Effect</Capability>
+ </Channel>
+ <Channel Name="CH2 Red">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Red</Colour>
+  <Capability Min="0" Max="0">Red Light Dark</Capability>
+  <Capability Min="1" Max="255">Red Light Dark to Light</Capability>
+ </Channel>
+ <Channel Name="CH3 Green">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Green</Colour>
+  <Capability Min="0" Max="0">Green Light Dark</Capability>
+  <Capability Min="1" Max="255">Green Light Dark to Light</Capability>
+ </Channel>
+ <Channel Name="CH4 Blue">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Blue</Colour>
+  <Capability Min="0" Max="0">Blue Light Dark</Capability>
+  <Capability Min="1" Max="255">Blue Light Dark to Light</Capability>
+ </Channel>
+ <Channel Name="CH5 White">
+  <Group Byte="0">Intensity</Group>
+  <Colour>White</Colour>
+  <Capability Min="0" Max="0">White Light Dark</Capability>
+  <Capability Min="1" Max="255">White Light Dark to Light</Capability>
+ </Channel>
+ <Channel Name="CH6 Effects">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="2">CH1-5 Effects</Capability>
+  <Capability Min="3" Max="31">Red Green Blue White jump change</Capability>
+  <Capability Min="32" Max="63">Red static Green Blue White jump change</Capability>
+  <Capability Min="64" Max="79">Red Green static Blue White jump change</Capability>
+  <Capability Min="80" Max="95">Red Green Blue static White jump change</Capability>
+  <Capability Min="96" Max="111">Red Green Blue White static jump change</Capability>
+  <Capability Min="112" Max="143">Red Green Blue White gradual change speed slow</Capability>
+  <Capability Min="144" Max="159">Red Green gradual change Blue White close</Capability>
+  <Capability Min="160" Max="175">Red Blue gradual change  Green White close</Capability>
+  <Capability Min="176" Max="191">Green Blue gradual change Red White close</Capability>
+  <Capability Min="192" Max="207">Red Green Blue White gradual change</Capability>
+  <Capability Min="208" Max="223">Red Green Blue White gradual change</Capability>
+  <Capability Min="224" Max="239">Sound 1</Capability>
+  <Capability Min="240" Max="249">Sound 2</Capability>
+  <Capability Min="250" Max="255">Sound 3</Capability>
+ </Channel>
+ <Mode Name="6CH">
+  <Channel Number="0">CH1 Mode/Function</Channel>
+  <Channel Number="1">CH2 Red</Channel>
+  <Channel Number="2">CH3 Green</Channel>
+  <Channel Number="3">CH4 Blue</Channel>
+  <Channel Number="4">CH5 White</Channel>
+  <Channel Number="5">CH6 Effects</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="LED RGBW" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="600g" Width="15.5cm" Height="15cm" Depth="8.5cm"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="10w" DmxConnector="3-pin"/>
+ </Physical>
+</FixtureDefinition>
