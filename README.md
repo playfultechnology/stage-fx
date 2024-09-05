@@ -11,16 +11,21 @@ Every fixture has different functions, which are mapped to different DMX channel
 QLC+ comes with a predefined set of common lighting fixtures, and if your lights appear in that list you can simply select them from there. 
 If not, you can use the standalone QLC Fixture Editor to add the parameters of your light fixture. You will need to refer to the instructions supplied by the manufacturer to identify the correct mode and channel functions. Save the fixture in the ``C:\Users\%USERNAME%\QLC+\Fixtures`` directory.
 
-``` Note: Many cheap, generic lights advertised by companies such as "Leleght" on Amazon, are actually rebranded versions of UKing lights. If you cannot find your light in the list and do not have a manual for it, try searching for a UKing model that looks the same at https://www.uking-online.com/product-categories/ and then download the corresponding product manual from https://www.uking-online.com/get-started/manuals/ ```
+``` Note: Many cheap, generic lights advertised by companies on Amazon etc. are actually rebranded versions of UKing lights. 
+e.g.
+ - [this](https://www.amazon.co.uk/LeLeght-Adjustable-Spotlight-Halloween-Christmas/dp/B0CFHFKP93) Leleght light is actually a [UKing ZQ06074](https://www.uking-online.com/product/48pcs-rgb-three-in-one-leds-color-mixing-rainbow-effect-highlights-outdoor-lighting/)
+ - [these](https://www.amazon.com/Donner-Spotlight-Pinspot-Lightning-Control/dp/B019GFDK10/) Donner pin spots are actually [UKing ZQB93](https://www.uking-online.com/product/2-pcs-b93-pinspot-rgbw-light-lt-led-10w/)
+
+So, if you cannot find your light in the list and do not have a manual for it, try searching for a UKing model that looks the same at https://www.uking-online.com/product-categories/ and then download the corresponding product manual from https://www.uking-online.com/get-started/manuals/ ```
 
 #### My Lighting Fixtures
 
 For reference, here are the lighting fixtures I use:
 
-| Description | Quantity | Fixture Definition |
-| ----------- | -------- | ------------------ |
-| [UKing 36LED RGB PARcan ](https://www.amazon.co.uk/U%60King-Console-Control-Wedding-Concert/dp/B09JJW6SWL/) |    4     | UKing Par36 (built-in) |
-| [Donner Pin Spot RGBW 10W](https://www.amazon.co.uk/gp/product/B07XM57FPV) |    1     |  |
+| Description | Quantity | Fixture Definition | DMX Channels |
+| ----------- | -------- | ------------------ | ------------ |
+| [UKing 36LED RGB PARcan ](https://www.amazon.co.uk/U%60King-Console-Control-Wedding-Concert/dp/B09JJW6SWL/) |    4     | UKing Par36 (built-in) | 7Ch |
+| [Donner Pin Spot RGBW 10W](https://www.amazon.co.uk/gp/product/B07XM57FPV) |    1     | UKing ZQ-B93 Pinspot RGBW (built-in) | 6Ch |
 | [Betopper LM70 moving head](https://www.amazon.co.uk/gp/product/B074FFJ165) |  3 | Betopper LM70 (built-in) |
 | [Leleght 80W RGB Wash](https://www.amazon.co.uk/gp/product/B0CFHFKP93) | 1 | |
 | [32Ch Dimmer](https://www.amazon.co.uk/gp/product/B075FHJM35/) | 1 | Generic (built-in) |
