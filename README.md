@@ -37,7 +37,7 @@ For reference, here are the fixtures I use. These are all cheap, generic "DJ"-st
 
 | Description | Quantity | Comments | 
 | ----------- | -------- | ------------------ |
-| [Fog Machine](https://www.amazon.co.uk/Wireless-DELIBANG-Capacity-Continuous-Halloween/dp/B09PG3VMFS/) |   ×1   | No DMX Control. Has manual trigger, but can't easily be automated. Note that controller plugs in via 3-pin connector but is NOT DMX (and might be very dangerous to plug in as such) |
+| [Fog Machine](https://www.amazon.co.uk/Wireless-DELIBANG-Capacity-Continuous-Halloween/dp/B09PG3VMFS/) |   ×1   | No DMX Control. Has manual trigger, but can't easily be automated. Note that controller plugs in via 3-pin connector but is NOT DMX (and might be very dangerous to plug in as such). Also has wireless remote control on 315MHz that could probably have codes cloned... |
 | [Bubble Machine](https://www.amazon.co.uk/gp/product/B095NKTHSJ/) | ×1 | No DMX Control. Can be activated remotely by relay | 
 | Projector | ×3  | Various projectors. Can be used to project image in place of gobos, but also used with haze to create beams |
 
