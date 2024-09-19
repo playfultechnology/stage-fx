@@ -20,7 +20,9 @@ If not, you can use the standalone QLC Fixture Editor to add the parameters of y
 > So, if you cannot find your light in the list and do not have a manual for it, try searching for a UKing model that looks the same at https://www.uking-online.com/product-categories/ and then download the corresponding product manual from https://www.uking-online.com/get-started/manuals/
 
 ### Fixtures
-For reference, here are the lighting fixtures I use:
+For reference, here are the fixtures I use. These are all cheap, generic "DJ"-style lights - there is no need to invest in expensive theatre-qaulity lights.
+
+#### DMX Lighting Fixtures
 
 | Description | Quantity | Fixture Definition | DMX Channels | 
 | ----------- | -------- | ------------------ | ------------ | 
@@ -29,6 +31,15 @@ For reference, here are the lighting fixtures I use:
 | [Betopper LM70 moving head](https://www.amazon.co.uk/gp/product/B074FFJ165) |  ×3 | Betopper LM70 (built-in) | 9Ch |
 | [Leleght 80W RGB Wash](https://www.amazon.co.uk/gp/product/B0CFHFKP93) | ×1 | [UKing ZQ-06074](https://github.com/playfultechnology/stage-fx/blob/main/QLC%2B/Fixtures/UKing-ZQ06074.qxf) | 2/4/6/7/12Ch |
 | [32Ch Dimmer](https://www.amazon.co.uk/gp/product/B075FHJM35/) | ×1 | Generic (built-in) | 32Ch |
+| [UV Can](https://www.amazon.co.uk/DMX512-Control-Activated-Lighting-Theater/dp/B07YD6P289/) | ×1 | ? | ? | 
+
+#### Other (Non-DMX) Fixtures
+
+| Description | Quantity | Comments | 
+| ----------- | -------- | ------------------ |
+| [Fog Machine](https://www.amazon.co.uk/Wireless-DELIBANG-Capacity-Continuous-Halloween/dp/B09PG3VMFS/) |   ×1   | No DMX Control. Has manual trigger, but can't easily be automated. Note that controller plugs in via 3-pin connector but is NOT DMX (and might be very dangerous to plug in as such) |
+| [Bubble Machine](https://www.amazon.co.uk/gp/product/B095NKTHSJ/) | ×1 | No DMX Control. Can be activated remotely by relay | 
+| Projector | ×3  | Various projectors. Can be used to project image in place of gobos, but also used with haze to create beams |
 
 ### Interfaces / Controllers
  - [Entec OpenDMX](https://www.enttec.co.uk/product/dmx-usb-interfaces/open-dmx-usb/) supported in QLC+ as a DMX USB (OpenTX) Output 
@@ -44,9 +55,6 @@ For reference, here are the lighting fixtures I use:
  - [WLED](https://kno.wled.ge/) LED animation and control software that exposes ESP8266/ESP32 as an ArtNet/sACN input node
  - [Jinx!](https://live-leds.de/downloads/) video mapping onto LED strips
 
-#### Other Hardware
- - 1× UV Can https://www.amazon.co.uk/DMX512-Control-Activated-Lighting-Theater/dp/B07YD6P289/
- - 1× Bubble Machine https://www.amazon.co.uk/gp/product/B095NKTHSJ/
 
 
 ### Controlling other stuff
