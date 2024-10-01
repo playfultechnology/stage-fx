@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.13.1</Version>
+  <Author>Alastair Aitchison</Author>
+ </Creator>
+ <Manufacturer>Perform FX</Manufacturer>
+ <Model>PFX600H</Model>
+ <Type>Smoke</Type>
+ <Channel Name="Pump" Preset="IntensityMasterDimmer"/>
+ <Channel Name="Fan">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255" Preset="SlowToFast">Fan Speed, slow - fast</Capability>
+ </Channel>
+ <Channel Name="Power">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="127">Off</Capability>
+  <Capability Min="128" Max="255">On</Capability>
+ </Channel>
+ <Mode Name="Normal">
+  <Channel Number="0">Power</Channel>
+  <Channel Number="1">Pump</Channel>
+  <Channel Number="2">Fan</Channel>
+ </Mode>
+ <Mode Name="Volume Only">
+  <Channel Number="0">Pump</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="10" Width="250" Height="250" Depth="400"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="600" DmxConnector="3-pin"/>
+ </Physical>
+</FixtureDefinition>
