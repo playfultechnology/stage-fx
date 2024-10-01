@@ -25,38 +25,38 @@
  <Channel Name="R4" Preset="IntensityRed"/>
  <Channel Name="G4" Preset="IntensityGreen"/>
  <Channel Name="B4" Preset="IntensityBlue"/>
- <Mode Name="3 Channel Mode (C)">
-  <Channel Number="0" ActsOn="0">Red</Channel>
-  <Channel Number="1" ActsOn="1">Green</Channel>
-  <Channel Number="2" ActsOn="2">Blue</Channel>
+ <Mode Name="3 Channel (C)">
+  <Channel Number="0">Red</Channel>
+  <Channel Number="1">Green</Channel>
+  <Channel Number="2">Blue</Channel>
  </Mode>
- <Mode Name="4 Channel Mode (d)">
-  <Channel Number="0" ActsOn="0">Master dimmer</Channel>
-  <Channel Number="1" ActsOn="1">Red</Channel>
-  <Channel Number="2" ActsOn="2">Green</Channel>
-  <Channel Number="3" ActsOn="3">Blue</Channel>
+ <Mode Name="4 Channel (d)">
+  <Channel Number="0">Master dimmer</Channel>
+  <Channel Number="1">Red</Channel>
+  <Channel Number="2">Green</Channel>
+  <Channel Number="3">Blue</Channel>
  </Mode>
- <Mode Name="6 Channel Mode (E)">
-  <Channel Number="0" ActsOn="0">R1</Channel>
-  <Channel Number="1" ActsOn="1">G1</Channel>
-  <Channel Number="2" ActsOn="2">B1</Channel>
-  <Channel Number="3" ActsOn="3">R2</Channel>
-  <Channel Number="4" ActsOn="4">G2</Channel>
-  <Channel Number="5" ActsOn="5">B2</Channel>
+ <Mode Name="6 Channel (E)">
+  <Channel Number="0">R1</Channel>
+  <Channel Number="1">G1</Channel>
+  <Channel Number="2">B1</Channel>
+  <Channel Number="3">R2</Channel>
+  <Channel Number="4">G2</Channel>
+  <Channel Number="5">B2</Channel>
  </Mode>
- <Mode Name="12 Channel Mode (P)">
-  <Channel Number="0" ActsOn="0">R1</Channel>
-  <Channel Number="1" ActsOn="1">G1</Channel>
-  <Channel Number="2" ActsOn="2">B1</Channel>
-  <Channel Number="3" ActsOn="3">R2</Channel>
-  <Channel Number="4" ActsOn="4">G2</Channel>
-  <Channel Number="5" ActsOn="5">B2</Channel>
-  <Channel Number="6" ActsOn="6">R3</Channel>
-  <Channel Number="7" ActsOn="7">G3</Channel>
-  <Channel Number="8" ActsOn="8">B3</Channel>
-  <Channel Number="9" ActsOn="9">R4</Channel>
-  <Channel Number="10" ActsOn="10">G4</Channel>
-  <Channel Number="11" ActsOn="11">B4</Channel>
+ <Mode Name="12 Channel (P)">
+  <Channel Number="0">R1</Channel>
+  <Channel Number="1">G1</Channel>
+  <Channel Number="2">B1</Channel>
+  <Channel Number="3">R2</Channel>
+  <Channel Number="4">G2</Channel>
+  <Channel Number="5">B2</Channel>
+  <Channel Number="6">R3</Channel>
+  <Channel Number="7">G3</Channel>
+  <Channel Number="8">B3</Channel>
+  <Channel Number="9">R4</Channel>
+  <Channel Number="10">G4</Channel>
+  <Channel Number="11">B4</Channel>
  </Mode>
  <Physical>
   <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
