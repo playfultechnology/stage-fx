@@ -3,10 +3,10 @@
 <FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
  <Creator>
   <Name>Q Light Controller Plus</Name>
-  <Version>4.12.4</Version>
+  <Version>4.13.1</Version>
   <Author>Michel</Author>
  </Creator>
- <Manufacturer>Sheds</Manufacturer>
+ <Manufacturer>Shehds</Manufacturer>
  <Model>LED Beam 8x12 RGBW </Model>
  <Type>LED Bar (Beams)</Type>
  <Channel Name="Tilt" Preset="PositionTilt"/>
