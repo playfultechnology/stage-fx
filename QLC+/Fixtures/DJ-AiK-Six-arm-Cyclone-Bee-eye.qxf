@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.13.1</Version>
+  <Author>Playful Technology</Author>
+ </Creator>
+ <Manufacturer>DJ AiK</Manufacturer>
+ <Model>Six-arm Cyclone Bee-eye</Model>
+ <Type>Laser</Type>
+ <Channel Name="X Motor" Preset="PositionXAxis"/>
+ <Channel Name="X Motor Speed" Preset="SpeedPanFastSlow"/>
+ <Channel Name="Bee-eye Motor" Preset="PositionXAxis"/>
+ <Channel Name="Motor1" Preset="PositionYAxis"/>
+ <Channel Name="Motor2" Preset="PositionYAxis"/>
+ <Channel Name="Motor3" Preset="PositionYAxis"/>
+ <Channel Name="Motor4" Preset="PositionYAxis"/>
+ <Channel Name="Motor5" Preset="PositionYAxis"/>
+ <Channel Name="Motor6" Preset="PositionYAxis"/>
+ <Channel Name="Dimmer" Preset="IntensityMasterDimmer"/>
+ <Channel Name="Bee-eye Strobe" Preset="ShutterStrobeSlowFast"/>
+ <Channel Name="Bee-eye Red" Preset="IntensityRed"/>
+ <Channel Name="Bee-eye Green" Preset="IntensityGreen"/>
+ <Channel Name="Bee-eye Blue" Preset="IntensityBlue"/>
+ <Channel Name="Bee-eye White" Preset="IntensityWhite"/>
+ <Channel Name="Beam Red" Preset="IntensityRed"/>
+ <Channel Name="Beam Green" Preset="IntensityGreen"/>
+ <Channel Name="Beam Blue" Preset="IntensityBlue"/>
+ <Channel Name="Beam White" Preset="IntensityWhite"/>
+ <Channel Name="Laser Red">
+  <Group Byte="0">Beam</Group>
+  <Capability Min="0" Max="255">Laser Red intensity (0 - 100%)</Capability>
+ </Channel>
+ <Channel Name="Laser Green">
+  <Group Byte="0">Beam</Group>
+  <Capability Min="0" Max="255">Laser Green intensity (0 - 100%)</Capability>
+ </Channel>
+ <Channel Name="Strobe" Preset="ShutterStrobeSlowFast"/>
+ <Channel Name="Macro Function">
+  <Group Byte="0">Maintenance</Group>
+ </Channel>
+ <Mode Name="Default">
+  <Channel Number="0">X Motor</Channel>
+  <Channel Number="1">X Motor Speed</Channel>
+  <Channel Number="2">Bee-eye Motor</Channel>
+  <Channel Number="3">Motor1</Channel>
+  <Channel Number="4">Motor2</Channel>
+  <Channel Number="5">Motor3</Channel>
+  <Channel Number="6">Motor4</Channel>
+  <Channel Number="7">Motor5</Channel>
+  <Channel Number="8">Motor6</Channel>
+  <Channel Number="9">Dimmer</Channel>
+  <Channel Number="10">Bee-eye Strobe</Channel>
+  <Channel Number="11">Bee-eye Red</Channel>
+  <Channel Number="12">Bee-eye Green</Channel>
+  <Channel Number="13">Bee-eye Blue</Channel>
+  <Channel Number="14">Bee-eye White</Channel>
+  <Channel Number="15">Beam Red</Channel>
+  <Channel Number="16">Beam Green</Channel>
+  <Channel Number="17">Beam Blue</Channel>
+  <Channel Number="18">Beam White</Channel>
+  <Channel Number="19">Laser Red</Channel>
+  <Channel Number="20">Laser Green</Channel>
+  <Channel Number="21">Strobe</Channel>
+  <Channel Number="22">Macro Function</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Head" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="150" DmxConnector="3-pin"/>
+ </Physical>
+</FixtureDefinition>
