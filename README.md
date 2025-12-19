@@ -42,7 +42,21 @@ For reference, here are the fixtures I use. These are all cheap, generic "DJ"-st
 | Projector | ×3  | Various projectors. Can be used to project image in place of gobos, but also used with haze to create beams |
 
 ### Interfaces / Controllers
- - [Entec OpenDMX](https://www.enttec.co.uk/product/dmx-usb-interfaces/open-dmx-usb/) supported in QLC+ as a DMX USB (OpenTX) Output 
+
+#### Entec OpenDMX
+ - [Entec OpenDMX](https://www.enttec.co.uk/product/dmx-usb-interfaces/open-dmx-usb/) supported in QLC+ as a DMX USB (OpenTX) Output
+
+Note that, despite this being a more "official" controller than some generic no-name USB-DMX dongles, it can actually be trickier to get to work.
+QLC+ can often _see_ the device, but does not appear to send any output to it. If this is the case, first see whether a serial number is assigned to it:
+
+![No serial number](https://github.com/playfultechnology/stage-fx/blob/main/Images/FT232_Dongle_BadSN.png)
+
+If not, make sure that you have installed the official FT232 drivers from https://ftdichip.com/drivers/d2xx-drivers/ (not the Microsoft ones)
+This should make the device properly recognised as follows:
+
+![Serial number](https://github.com/playfultechnology/stage-fx/blob/main/Images/FT232_Dongle_GoodSN.png)
+
+#### Generic FT232 USB-DMX Dongle
  - [Generic FT232 DMX Dongle](https://www.aliexpress.com/item/1005003738423230.html) supported in QLC+ as a DMX USB (OpenTX) Output
    
 ![QLC settings for adding FT232/OpenDMX output](https://github.com/playfultechnology/stage-fx/blob/main/Images/FT232_Dongle_QLC_Input.png)
