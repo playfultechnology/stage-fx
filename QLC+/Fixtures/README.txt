@@ -1,0 +1,1 @@
+These must be placed in C:\Users\{Username}\QLC+\Fixtures
