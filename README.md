@@ -107,7 +107,8 @@ There are various other hardware:
  - [ArtNet/DMX to SPI LED controller](https://www.aliexpress.com/item/1005006092996297.html)
  - [DMX Relay](https://s.click.aliexpress.com/e/_c3ohmzwT)
  - [DMX Motor Controller](https://www.aliexpress.com/item/1005005978486556.html)
- However, these can mostly all be replaced with an ESP32 running one or more of the following libraries, and controlling relay(s) or other outputs as required:
+   
+ However, these separate units can mostly all be replaced (for cheaper, and more reliably) with an ESP32 running one or more of the following libraries, and controlling relay(s) or other outputs as required:
  - [sACN](https://github.com/forkineye/ESPAsyncE131)
  - [DMX](https://github.com/someweisguy/esp_dmx)
  - [Art-Net](https://github.com/hideakitai/ArtNet)
