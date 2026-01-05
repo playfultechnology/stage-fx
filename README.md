@@ -113,7 +113,11 @@ There are various other hardware:
  - [DMX](https://github.com/someweisguy/esp_dmx)
  - [Art-Net](https://github.com/hideakitai/ArtNet)
 
-The GLEDOPTO range are a nicely pre-packaged ESP32 controller for LED control. For other purposes, I recommend a Kincony KC868-A6, which has 6 relay outputs and an RS485 port (which is DMX)
+The GLEDOPTO range are a nicely pre-packaged ESP32 controller for LED control. 
+The most premium GL-C-618WL ("Elite 4D EXMU") has wired ethernet, 4 output channels, 1 input channel.   (616WL only has 2 channels)
+The more basic GL-C-015WL model is also fine if only wireless required.
+
+For other purposes, I recommend a Kincony KC868-A6, which has 6 relay outputs and an RS485 port (which is DMX)
 
  - https://robertoostenveld.nl/art-net-to-dmx512-with-esp8266/
  - WLED: https://kno.wled.ge/interfaces/dmx-output/
