@@ -1,6 +1,9 @@
 # stage-fx
 
 ## QLC+
+[QLC+](https://qlcplus.org/) is show control software enabling sequencing, live effects of DMX, ArtNet, and sACN fixtures. 
+Latest QLC branch is 5.x, however that does not include all features of v4.x (notably, missing the web interface that enables QLC to be automated from web calls from, e.g. Node-RED). [This spreadsheet](https://docs.google.com/spreadsheets/d/1J1BK0pYCsLVBfLpDZ-GqpNgUzbgTwmhf9zOjg4J_MWg/edit?gid=0#gid=0) provides current feature timeline.
+
  - Download [QLC+](https://qlcplus.org/) v4.13.1
  - Launch using the -w option, i.e. ``C:\QLC+\qlcplus.exe -w`` to enable web interface
 
@@ -64,11 +67,9 @@ This should make the device properly recognised as follows:
  - [192Ch DMX Controller](https://www.amazon.co.uk/gp/product/B0C5T762N6) (Chauvet Obey clone) standalone DMX controller
  - [ArtNet to DMX interface](https://www.aliexpress.com/item/1005005911108272.html) 
 
-### Software
- - [QLC+](https://qlcplus.org/) Show control software enabling sequencing, live effects of DMX, ArtNet, and sACN fixtures
+### Other Software
  - [WLED](https://kno.wled.ge/) LED animation and control software that exposes ESP8266/ESP32 as an ArtNet/sACN input node
  - [Jinx!](https://live-leds.de/downloads/) video mapping onto LED strips
-
 
 
 ## HS807SA
@@ -101,5 +102,17 @@ You can then access every individual RGB pixel value as an ArtNet fixture define
 ![QLC ArtNet](https://github.com/playfultechnology/stage-fx/blob/main/Images/QLC_ArtNet.jpg)
 
 ### Controlling other stuff
+There are various other hardware:
+ - [ArtNet to DMX convertor](https://s.click.aliexpress.com/e/_c3r8dzBd)
+ - [ArtNet/DMX to SPI LED controller](https://www.aliexpress.com/item/1005006092996297.html)
+ - [DMX Relay](https://s.click.aliexpress.com/e/_c3ohmzwT)
+ - [DMX Motor Controller](https://www.aliexpress.com/item/1005005978486556.html)
+ However, these can mostly all be replaced with an ESP32 running one or more of the following libraries, and controlling relay(s) or other outputs as required:
+ - [sACN](https://github.com/forkineye/ESPAsyncE131)
+ - [DMX](https://github.com/someweisguy/esp_dmx)
+ - [Art-Net](https://github.com/hideakitai/ArtNet)
+
+The GLEDOPTO range are a nicely pre-packaged ESP32 controller for LED control. For other purposes, I recommend a Kincony KC868-A6, which has 6 relay outputs and an RS485 port (which is DMX)
+
  - https://robertoostenveld.nl/art-net-to-dmx512-with-esp8266/
  - WLED: https://kno.wled.ge/interfaces/dmx-output/
