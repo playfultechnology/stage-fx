@@ -71,14 +71,18 @@ This should make the device properly recognised as follows:
  - [WLED](https://kno.wled.ge/) LED animation and control software that exposes ESP8266/ESP32 as an ArtNet/sACN input node
  - [Jinx!](https://live-leds.de/downloads/) video mapping onto LED strips
 
+### SP201E
+This is a DMX to LED controller that accepts a DMX input and decodes it into an SPI output suitable for individually addressable LEDs like WS2811, WS2812B, SK6812, APA102, and also RGBW (analogue) strips.
+Confusingly, it does both at the same time - Channels 1-5 will be the PWM values of the analogue strips, but also the first five channels of programmable data (which typically would be the R/G/B values of the first LED, and the R/G values of the second LED). Both outputs are driven from the same DMX channel data at all times. 
+Also confusingly is the menu system. To set the channel offset, you must hold the up/down button to select which digit to adjust, and then tap it to actually change the value of that digit. 
+Can control a maximum of 170 programmable LEDs
 
-## HS807SA
+### HS807SA
 This is advertised as an "DMX/ArtNet LED Controller" on AliExpress etc., most commonly described as manufactured by Suntech ![H807SA](https://github.com/playfultechnology/stage-fx/blob/main/Images/H807SA.jpg)
 It's actually not a bad piece of hardware, but the instructions and features can be rather.... tricky to work out, so here's what I've figured out.
-### Standalone Mode
+#### Standalone Mode
 The controller will play a sequence saved on the SD card in .DAT format. These sequences should apparently be created/edited using software called "LED Programming Software V4.47", but that seems impossible to track down. My best guess is that it _might_ refer to "LED Studio" by Linsn: https://www.linsnled.com/led-control-software.html but that looks sus, so I'd rather not install it on my PC. Instead, I've made some progress to reverse-engineering the DAT file format used and will document that here. Meanwhile the controller comes with about 40 different pre-programmed patterns that can be selected using the menu buttons.
-
-### DMX Mode
+#### DMX Mode
 Using the DMX interface does not allow you to control each LED individually. Rather, it operates as a 8-channel DMX fixture which allows you to trigger, and to some degree customise, the same sequences as can be played in standalone mode. 
 
 | Channel | Name | Description | 
@@ -92,8 +96,7 @@ Using the DMX interface does not allow you to control each LED individually. Rat
 | 7 | Speed | Animation speed | 
 | 8 | Direction | 0-127 = Forward, 128-255 = Backward | 
 
-
-### ArtNet Mode
+#### ArtNet Mode
 Unlike DMX mode, using the ArtNet interface exposes every LED as a seperate RGB channel. Artnet interface should be connected to the Net2 (In/Out) port, and the SD card _removed_ prior to turning on (otherwise it keeps on trying to play one of the pre-defined sequences).
 If you want to connect directly to the controller from your PC rather than needing to be on a shared network, plug in an ethernet cable from your computer and set Network Adaptor options as follows (I'm choosing 192.168.2.x so it doesn't interfere with my primary Wi-Fi IP address, which is assigned as 192.168.1.x)
 ![LAN Setup](https://github.com/playfultechnology/stage-fx/blob/main/Images/LAN%20setup.jpg)
