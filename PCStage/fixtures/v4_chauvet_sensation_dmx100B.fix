@@ -1,0 +1,138 @@
+FIXTURE
+  SIZE,5
+  MOVEABLE,True
+  PAN,4
+  TILT,5
+  CHANNELS
+    ITEM
+      NAME,Shutter
+      NUMBER,1
+      PERCENT,False
+      RANGES
+        ITEM
+          NAME,Open
+          MAX,15
+        END
+        ITEM
+          NAME,"Strobe, slow --> fast"
+          MIN,16
+          VARIABLE,True
+        END
+      END
+    END
+    ITEM
+      NAME,Gobo/Colour
+      NUMBER,2
+      PERCENT,False
+      RANGES
+        ITEM
+          NAME,Blackout
+          MAX,8
+        END
+        ITEM
+          NAME,Open
+          MIN,9
+          MAX,16
+        END
+        ITEM
+          NAME,"Gobo 1 / Multicolour"
+          MIN,17
+          MAX,24
+        END
+        ITEM
+          NAME,"Gobo 2 / Blue"
+          MIN,25
+          MAX,32
+        END
+        ITEM
+          NAME,"Gobo 3 / Yellow"
+          MIN,33
+          MAX,40
+        END
+        ITEM
+          NAME,"Gobo 4 / Green"
+          MIN,41
+          MAX,48
+        END
+        ITEM
+          NAME,"Gobo 5 / Orange"
+          MIN,49
+          MAX,56
+        END
+        ITEM
+          NAME,"Gobo 6 / Red"
+          MIN,57
+          MAX,64
+        END
+        ITEM
+          NAME,"Gobo 7 / Magenta"
+          MIN,65
+          MAX,72
+        END
+        ITEM
+          NAME,"Gobo 8 / Light Blue"
+          MIN,73
+          MAX,80
+        END
+        ITEM
+          NAME,"Gobo 9 / Pink"
+          MIN,81
+          MAX,88
+        END
+        ITEM
+          NAME,"Gobo 10 / Magenta"
+          MIN,89
+          MAX,96
+        END
+        ITEM
+          NAME,"Gobo 11 / Orange"
+          MIN,97
+          MAX,104
+        END
+        ITEM
+          NAME,"Gobo 12 / Blue"
+          MIN,105
+          MAX,112
+        END
+        ITEM
+          NAME,"Gobo 13 / White"
+          MIN,113
+          MAX,120
+        END
+        ITEM
+          NAME,"Gobo 14 / Green + Pink"
+          MIN,121
+          MAX,128
+        END
+        ITEM
+          NAME,"Slow --> fast"
+          MIN,129
+          VARIABLE,True
+        END
+      END
+    END
+    ITEM
+      NAME,"Reflector mirror"
+      NUMBER,3
+      PERCENT,False
+      RANGES
+        ITEM
+          NAME,Stop
+          MAX,10
+        END
+        ITEM
+          NAME,"Left, fast --> slow"
+          MIN,11
+          MAX,121
+          VARIABLE,True
+        END
+        ITEM
+          NAME,"Right, slow --> fast"
+          MIN,136
+          MAX,246
+          VARIABLE,True
+        END
+      END
+    END
+  END
+END

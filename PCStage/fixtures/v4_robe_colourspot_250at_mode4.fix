@@ -1,0 +1,722 @@
+FIXTURE
+  SIZE,16
+  MOVEABLE,True
+  PAN,1
+  TILT,3
+  PANFINE,2
+  TILTFINE,4
+  CHANNELS
+    ITEM
+      NAME,"pan/tilt speed"
+      NUMBER,5
+      PERCENT,False
+      RANGES
+        ITEM
+          NAME,"pan/tilt speed"
+          VARIABLE,True
+        END
+        ITEM
+          NAME,"pan/tilt time"
+          VARIABLE,True
+        END
+      END
+    END
+    ITEM
+      NAME,"power/special function"
+      NUMBER,6
+      PERCENT,False
+      RANGES
+        ITEM
+          NAME,reserved
+          MAX,49
+        END
+        ITEM
+          NAME,"pan/tilt speed"
+          MIN,50
+          MAX,59
+        END
+        ITEM
+          NAME,"pan/tilt time mode"
+          MIN,60
+          MAX,69
+        END
+        ITEM
+          NAME,"blackout while moving"
+          MIN,70
+          MAX,79
+        END
+        ITEM
+          NAME,"disable blackout while moving"
+          MIN,80
+          MAX,89
+        END
+        ITEM
+          NAME,"blackout while colour moving"
+          MIN,90
+          MAX,99
+        END
+        ITEM
+          NAME,"disable blackout while colour moving"
+          MIN,100
+          MAX,109
+        END
+        ITEM
+          NAME,"blackout while gobo moving"
+          MIN,110
+          MAX,119
+        END
+        ITEM
+          NAME,"disable blackout while gobo moving"
+          MIN,120
+          MAX,129
+        END
+        ITEM
+          NAME,"lamp on reset"
+          MIN,130
+          MAX,139
+        END
+        ITEM
+          NAME,"pan/tilt reset"
+          MIN,140
+          MAX,149
+        END
+        ITEM
+          NAME,"colour wheel reset"
+          MIN,150
+          MAX,159
+        END
+        ITEM
+          NAME,"gobo wheel reset"
+          MIN,160
+          MAX,169
+        END
+        ITEM
+          NAME,"dimmer/strobe reset"
+          MIN,170
+          MAX,179
+        END
+        ITEM
+          NAME,"focus reset"
+          MIN,180
+          MAX,189
+        END
+        ITEM
+          NAME,"prism reset"
+          MIN,190
+          MAX,199
+        END
+        ITEM
+          NAME,"total reset"
+          MIN,200
+          MAX,209
+        END
+        ITEM
+          NAME,reserved
+          MIN,210
+          MAX,229
+        END
+        ITEM
+          NAME,"lamp off"
+          MIN,230
+          MAX,239
+        END
+        ITEM
+          NAME,reserved
+          MIN,240
+        END
+      END
+    END
+    ITEM
+      NAME,"pan/tilt macro selection"
+      NUMBER,7
+      PERCENT,False
+      RANGES
+        ITEM
+          NAME,"disable pan/tilt macro"
+          MAX,9
+        END
+        ITEM
+          NAME,reserved
+          MIN,10
+          MAX,31
+        END
+        ITEM
+          NAME,"circle small to large"
+          MIN,32
+          MAX,63
+        END
+        ITEM
+          NAME,"horizontal eight small to large"
+          MIN,64
+          MAX,95
+        END
+        ITEM
+          NAME,"vertical eight small to large"
+          MIN,96
+          MAX,127
+        END
+        ITEM
+          NAME,"rectangle small to large"
+          MIN,128
+          MAX,159
+        END
+        ITEM
+          NAME,"triangle small to large"
+          MIN,160
+          MAX,191
+        END
+        ITEM
+          NAME,"star small to large"
+          MIN,192
+          MAX,223
+        END
+        ITEM
+          NAME,"cross small to large"
+          MIN,224
+        END
+      END
+    END
+    ITEM
+      NAME,"pan/tilt  microspeed"
+      NUMBER,8
+      PERCENT,False
+      RANGES
+        ITEM
+          NAME,"no macro generation"
+          MAX,0
+        END
+        ITEM
+          NAME,"macro fast to slow-forwards"
+          MIN,1
+          MAX,127
+        END
+        ITEM
+          NAME,"no macro generation"
+          MIN,128
+          MAX,129
+        END
+        ITEM
+          NAME,"macro slow to fast-backwards"
+          MIN,130
+        END
+      END
+    END
+    ITEM
+      NAME,"colour wheel"
+      NUMBER,9
+      PERCENT,False
+      RANGES
+        ITEM
+          NAME,open/white
+          MAX,0
+        END
+        ITEM
+          NAME,"dark green"
+          MIN,11
+          MAX,11
+        END
+        ITEM
+          NAME,red
+          MIN,23
+          MAX,23
+        END
+        ITEM
+          NAME,"light azure"
+          MIN,34
+          MAX,34
+        END
+        ITEM
+          NAME,magenta
+          MIN,46
+          MAX,46
+        END
+        ITEM
+          NAME,"uv filter"
+          MIN,58
+          MAX,58
+        END
+        ITEM
+          NAME,yellow
+          MIN,70
+          MAX,70
+        END
+        ITEM
+          NAME,green
+          MIN,81
+          MAX,81
+        END
+        ITEM
+          NAME,pink
+          MIN,93
+          MAX,93
+        END
+        ITEM
+          NAME,blue
+          MIN,105
+          MAX,105
+        END
+        ITEM
+          NAME,"deep red"
+          MIN,117
+          MAX,117
+        END
+        ITEM
+          NAME,white
+          MIN,128
+          MAX,128
+        END
+        ITEM
+          NAME,"dark green"
+          MIN,130
+          MAX,135
+        END
+        ITEM
+          NAME,red
+          MIN,136
+          MAX,141
+        END
+        ITEM
+          NAME,"light azure"
+          MIN,142
+          MAX,147
+        END
+        ITEM
+          NAME,magenta
+          MIN,148
+          MAX,153
+        END
+        ITEM
+          NAME,uvfilter
+          MIN,154
+          MAX,159
+        END
+        ITEM
+          NAME,yellow
+          MIN,160
+          MAX,165
+        END
+        ITEM
+          NAME,green
+          MIN,166
+          MAX,171
+        END
+        ITEM
+          NAME,pink
+          MIN,172
+          MAX,177
+        END
+        ITEM
+          NAME,blue
+          MIN,178
+          MAX,183
+        END
+        ITEM
+          NAME,"deep red"
+          MIN,184
+          MAX,189
+        END
+        ITEM
+          NAME,"forward rainbow fast to slow"
+          MIN,190
+          MAX,215
+        END
+        ITEM
+          NAME,"no rotation"
+          MIN,216
+          MAX,217
+        END
+        ITEM
+          NAME,"backwards rainbow slow to fast"
+          MIN,218
+          MAX,243
+        END
+        ITEM
+          NAME,"random colour audio control"
+          MIN,244
+          MAX,249
+        END
+        ITEM
+          NAME,"auto random colour  fast to slow"
+          MIN,250
+        END
+      END
+    END
+    ITEM
+      NAME,"rotating gobo wheel"
+      NUMBER,10
+      PERCENT,False
+      RANGES
+        ITEM
+          NAME,open
+          MAX,3
+        END
+        ITEM
+          NAME,gobo1
+          MIN,4
+          MAX,7
+        END
+        ITEM
+          NAME,gobo2
+          MIN,8
+          MAX,11
+        END
+        ITEM
+          NAME,gobo3
+          MIN,12
+          MAX,15
+        END
+        ITEM
+          NAME,gobo4
+          MIN,16
+          MAX,19
+        END
+        ITEM
+          NAME,gobo5
+          MIN,20
+          MAX,23
+        END
+        ITEM
+          NAME,gobo6
+          MIN,24
+          MAX,27
+        END
+        ITEM
+          NAME,gobo7
+          MIN,28
+          MAX,31
+        END
+        ITEM
+          NAME,"rotation gobo1"
+          MIN,32
+          MAX,35
+        END
+        ITEM
+          NAME,"rotation gobo2"
+          MIN,36
+          MAX,39
+        END
+        ITEM
+          NAME,"rotation gobo3"
+          MIN,40
+          MAX,43
+        END
+        ITEM
+          NAME,"rotation gobo4"
+          MIN,44
+          MAX,47
+        END
+        ITEM
+          NAME,"rotation gobo5"
+          MIN,48
+          MAX,51
+        END
+        ITEM
+          NAME,"rotation gobo6"
+          MIN,52
+          MAX,55
+        END
+        ITEM
+          NAME,"rotation gobo7"
+          MIN,56
+          MAX,59
+        END
+        ITEM
+          NAME,"shaking sl/fa gobo1"
+          MIN,60
+          MAX,69
+        END
+        ITEM
+          NAME,"shaking sl/fas gobo2"
+          MIN,70
+          MAX,79
+        END
+        ITEM
+          NAME,"shaking sl/fas gobo3"
+          MIN,80
+          MAX,89
+        END
+        ITEM
+          NAME,"shaking sl/fas gobo4"
+          MIN,90
+          MAX,99
+        END
+        ITEM
+          NAME,"shaking sl/fas gobo5"
+          MIN,100
+          MAX,109
+        END
+        ITEM
+          NAME,"shaking sl/fas gobo6"
+          MIN,110
+          MAX,119
+        END
+        ITEM
+          NAME,"shaking sl/fas gobo7"
+          MIN,120
+          MAX,129
+        END
+        ITEM
+          NAME,"shaking sl/fas  rotation gobo1"
+          MIN,130
+          MAX,139
+        END
+        ITEM
+          NAME,"shaking sl/fas  rotation gobo2"
+          MIN,140
+          MAX,149
+        END
+        ITEM
+          NAME,"shaking sl/fas  rotation gobo3"
+          MIN,150
+          MAX,159
+        END
+        ITEM
+          NAME,"shaking sl/fas  rotation gobo4"
+          MIN,160
+          MAX,169
+        END
+        ITEM
+          NAME,"shaking sl/fas  rotation gobo5"
+          MIN,170
+          MAX,179
+        END
+        ITEM
+          NAME,"shaking sl/fas  rotation gobo6"
+          MIN,180
+          MAX,189
+        END
+        ITEM
+          NAME,"shaking sl/fas  rotation gobo7"
+          MIN,190
+          MAX,199
+        END
+        ITEM
+          NAME,open
+          MIN,200
+          MAX,201
+        END
+        ITEM
+          NAME,"foward rotaion fast to slow"
+          MIN,202
+          MAX,221
+        END
+        ITEM
+          NAME,"no rotation"
+          MIN,222
+          MAX,223
+        END
+        ITEM
+          NAME,"backwards rotation slow to fast"
+          MIN,224
+          MAX,243
+        END
+        ITEM
+          NAME,"random audio cotrol"
+          MIN,244
+          MAX,249
+        END
+        ITEM
+          NAME,"auto rotation slow to fast"
+          MIN,250
+        END
+      END
+    END
+    ITEM
+      NAME,"gobo rotation"
+      NUMBER,11
+      PERCENT,False
+      RANGES
+        ITEM
+          NAME,"no rotation"
+          MAX,0
+        END
+        ITEM
+          NAME,"fwd-fast to slow"
+          MIN,1
+          MAX,127
+        END
+        ITEM
+          NAME,"no rotation"
+          MIN,128
+          MAX,129
+        END
+        ITEM
+          NAME,"bkwd-slow to fast"
+          MIN,130
+        END
+      END
+    END
+    ITEM
+      NAME,prism
+      NUMBER,12
+      PERCENT,False
+      RANGES
+        ITEM
+          NAME,open
+          MAX,19
+        END
+        ITEM
+          NAME,"3-rotating prism"
+          MIN,20
+          MAX,159
+        END
+        ITEM
+          NAME,macro1
+          MIN,160
+          MAX,167
+        END
+        ITEM
+          NAME,macro2
+          MIN,168
+          MAX,175
+        END
+        ITEM
+          NAME,macro3
+          MIN,176
+          MAX,183
+        END
+        ITEM
+          NAME,macro4
+          MIN,184
+          MAX,191
+        END
+        ITEM
+          NAME,macro5
+          MIN,192
+          MAX,199
+        END
+        ITEM
+          NAME,macro6
+          MIN,200
+          MAX,207
+        END
+        ITEM
+          NAME,macro7
+          MIN,208
+          MAX,215
+        END
+        ITEM
+          NAME,macro8
+          MIN,216
+          MAX,223
+        END
+        ITEM
+          NAME,macro9
+          MIN,224
+          MAX,231
+        END
+        ITEM
+          NAME,macro10
+          MIN,232
+          MAX,239
+        END
+        ITEM
+          NAME,macro11
+          MIN,240
+          MAX,247
+        END
+        ITEM
+          NAME,macro12
+          MIN,248
+        END
+      END
+    END
+    ITEM
+      NAME,"prism rotation"
+      NUMBER,13
+      PERCENT,False
+      RANGES
+        ITEM
+          NAME,"no rotation"
+          MAX,0
+        END
+        ITEM
+          NAME,"fwd-fast to slow"
+          MIN,1
+          MAX,127
+        END
+        ITEM
+          NAME,"no rotation"
+          MIN,128
+          MAX,129
+        END
+        ITEM
+          NAME,"bkwd-slow to fast"
+          MIN,130
+        END
+      END
+    END
+    ITEM
+      NAME,focus
+      NUMBER,14
+      PERCENT,False
+      RANGES
+        ITEM
+          NAME,"coarse focus"
+          VARIABLE,True
+        END
+      END
+    END
+    ITEM
+      NAME,shutter
+      NUMBER,15
+      PERCENT,False
+      RANGES
+        ITEM
+          NAME,"shutter closed"
+          MAX,31
+        END
+        ITEM
+          NAME,"shutter open"
+          MIN,32
+          MAX,63
+        END
+        ITEM
+          NAME,"strobe-slow to fast"
+          MIN,64
+          MAX,95
+        END
+        ITEM
+          NAME,"shutter open"
+          MIN,96
+          MAX,127
+        END
+        ITEM
+          NAME,"open pulse-slow to fast"
+          MIN,128
+          MAX,143
+        END
+        ITEM
+          NAME,"closing pulse-fast to slow"
+          MIN,144
+          MAX,159
+        END
+        ITEM
+          NAME,"shutter open"
+          MIN,160
+          MAX,191
+        END
+        ITEM
+          NAME,"random strobe-slow to fast"
+          MIN,192
+          MAX,223
+        END
+        ITEM
+          NAME,"shutter open"
+          MIN,224
+        END
+      END
+    END
+    ITEM
+      NAME,dimmer
+      NUMBER,16
+      PERCENT,False
+      RANGES
+        ITEM
+          NAME,"dimmer intensity"
+          VARIABLE,True
+        END
+      END
+    END
+  END
+END

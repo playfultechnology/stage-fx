@@ -1,0 +1,377 @@
+FIXTURE
+  SIZE,16
+  MOVEABLE,True
+  PAN,1
+  TILT,2
+  PANFINE,3
+  TILTFINE,4
+  CHANNELS
+    ITEM
+      NAME,"Move speed"
+      NUMBER,5
+      PERCENT,False
+      RANGES
+        ITEM
+          NAME,Speed
+          MAX,249
+          VARIABLE,True
+        END
+        ITEM
+          NAME,"Max with B/O"
+          MIN,250
+          VARIABLE,True
+        END
+      END
+    END
+    ITEM
+      NAME,Lamp
+      NUMBER,6
+      PERCENT,False
+      RANGES
+        ITEM
+          NAME,"Lamp fan (max - min)"
+          MAX,127
+          VARIABLE,True
+        END
+        ITEM
+          NAME,On
+          MIN,128
+          MAX,139
+          VARIABLE,True
+        END
+        ITEM
+          NAME,"Off after 3 sec"
+          MIN,230
+          VARIABLE,True
+        END
+      END
+    END
+    ITEM
+      NAME,Colour
+      NUMBER,7
+      PERCENT,False
+      COLOUR,True
+      RANGES
+        ITEM
+          NAME,White
+          MAX,0
+        END
+        ITEM
+          NAME,Turquoise
+          MIN,10
+          MAX,10
+          COLOUR,16744576
+        END
+        ITEM
+          NAME,Red
+          MIN,21
+          MAX,21
+          COLOUR,255
+        END
+        ITEM
+          NAME,Cyan
+          MIN,32
+          MAX,32
+          COLOUR,16777088
+        END
+        ITEM
+          NAME,Green
+          MIN,42
+          MAX,42
+          COLOUR,65280
+        END
+        ITEM
+          NAME,Magenta
+          MIN,53
+          MAX,53
+          COLOUR,16744703
+        END
+        ITEM
+          NAME,"Light Blue"
+          MIN,64
+          MAX,64
+          COLOUR,16777088
+        END
+        ITEM
+          NAME,Yellow
+          MIN,74
+          MAX,74
+          COLOUR,65535
+        END
+        ITEM
+          NAME,Green
+          MIN,85
+          MAX,85
+          COLOUR,4259584
+        END
+        ITEM
+          NAME,Pink
+          MIN,96
+          MAX,96
+          COLOUR,12615935
+        END
+        ITEM
+          NAME,Blue
+          MIN,106
+          MAX,106
+          COLOUR,16711680
+        END
+        ITEM
+          NAME,Orange
+          MIN,117
+          MAX,117
+          COLOUR,33023
+        END
+        ITEM
+          NAME,"Fwd (fast - slow)"
+          MIN,128
+          MAX,190
+          VARIABLE,True
+        END
+        ITEM
+          NAME,"Back (slow - fast)"
+          MIN,193
+          VARIABLE,True
+        END
+      END
+    END
+    ITEM
+      NAME,Prism
+      NUMBER,9
+      PERCENT,False
+      RANGES
+        ITEM
+          NAME,Open
+          MAX,0
+        END
+        ITEM
+          NAME,Rotating
+          MIN,96
+          MAX,96
+        END
+        ITEM
+          NAME,"Macro 1"
+          MIN,160
+          MAX,160
+        END
+        ITEM
+          NAME,"Macro 2"
+          MIN,168
+          MAX,168
+        END
+        ITEM
+          NAME,"Macro 3"
+          MIN,176
+          MAX,176
+        END
+        ITEM
+          NAME,"Macro 4"
+          MIN,184
+          MAX,184
+        END
+        ITEM
+          NAME,"Macro 5"
+          MIN,192
+          MAX,192
+        END
+        ITEM
+          NAME,"Macro 6"
+          MIN,200
+          MAX,200
+        END
+        ITEM
+          NAME,"Macro 7"
+          MIN,208
+          MAX,208
+        END
+        ITEM
+          NAME,"Macro 9"
+          MIN,224
+          MAX,224
+        END
+        ITEM
+          NAME,"Macro 10"
+          MIN,232
+          MAX,232
+        END
+        ITEM
+          NAME,"Macro 11"
+          MIN,240
+          MAX,240
+        END
+        ITEM
+          NAME,"Macro 12"
+          MIN,248
+          MAX,248
+        END
+      END
+    END
+    ITEM
+      NAME,"Prism rotation"
+      NUMBER,10
+      PERCENT,False
+      RANGES
+        ITEM
+          NAME,"No rotation"
+          MAX,0
+        END
+        ITEM
+          NAME,"Fwd (fast - slow)"
+          MIN,1
+          MAX,126
+          VARIABLE,True
+        END
+        ITEM
+          NAME,"Back (slow - fast)"
+          MIN,129
+          VARIABLE,True
+        END
+      END
+    END
+    ITEM
+      NAME,Gobo
+      NUMBER,11
+      PERCENT,False
+      RANGES
+        ITEM
+          NAME,"No gobo"
+          MAX,0
+        END
+        ITEM
+          NAME,"Gobo 1"
+          MIN,32
+          MAX,32
+        END
+        ITEM
+          NAME,"Gobo 2"
+          MIN,64
+          MAX,64
+        END
+        ITEM
+          NAME,"Gobo 3"
+          MIN,96
+          MAX,96
+        END
+        ITEM
+          NAME,"Gobo 4"
+          MIN,128
+          MAX,128
+        END
+        ITEM
+          NAME,"Gobo 5"
+          MIN,160
+          MAX,160
+        END
+        ITEM
+          NAME,"Gobo 6"
+          MIN,192
+          MAX,192
+        END
+        ITEM
+          NAME,"Rotate (slow - fast)"
+          MIN,224
+          VARIABLE,True
+        END
+      END
+    END
+    ITEM
+      NAME,"Gobo angle"
+      NUMBER,12
+      PERCENT,False
+      RANGES
+        ITEM
+          NAME,Position
+          MAX,127
+          VARIABLE,True
+        END
+        ITEM
+          NAME,"Fwd (fast - slow)"
+          MIN,128
+          MAX,191
+          VARIABLE,True
+        END
+        ITEM
+          NAME,Stop
+          MIN,192
+          MAX,192
+        END
+        ITEM
+          NAME,"Back (slow - fast)"
+          MIN,193
+          VARIABLE,True
+        END
+      END
+    END
+    ITEM
+      NAME,Focus
+      NUMBER,14
+      PERCENT,False
+      RANGES
+        ITEM
+          NAME,"Far to near"
+          VARIABLE,True
+        END
+      END
+    END
+    ITEM
+      NAME,Shutter/Strobe
+      NUMBER,15
+      PERCENT,False
+      RANGES
+        ITEM
+          NAME,CLOSED
+          MAX,0
+        END
+        ITEM
+          NAME,OPEN
+          MIN,32
+          MAX,32
+        END
+        ITEM
+          NAME,"Strobe (slow - fast)"
+          MIN,64
+          MAX,95
+          VARIABLE,True
+        END
+        ITEM
+          NAME,OPEN
+          MIN,96
+          MAX,96
+        END
+        ITEM
+          NAME,Pulse
+          MIN,128
+          MAX,159
+          VARIABLE,True
+        END
+        ITEM
+          NAME,OPEN
+          MIN,160
+          MAX,160
+        END
+        ITEM
+          NAME,"Random strobe (slow - fast)"
+          MIN,192
+          MAX,223
+          VARIABLE,True
+        END
+        ITEM
+          NAME,OPEN
+          MIN,224
+          MAX,224
+        END
+      END
+    END
+    ITEM
+      NAME,Brightness
+      NUMBER,16
+      RANGES
+        ITEM
+          NAME,Intensity
+          MAX,100
+          VARIABLE,True
+        END
+      END
+    END
+  END
+END
