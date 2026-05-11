@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE InputProfile>
+<InputProfile xmlns="http://www.qlcplus.org/InputProfile">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.13.0</Version>
+  <Author>Admin</Author>
+ </Creator>
+ <Manufacturer>Dummy Mover</Manufacturer>
+ <Model>2 Channel</Model>
+ <Type>DMX</Type>
+ <Channel Number="0">
+  <Name>Pan 1</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="1">
+  <Name>Tilt 1</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="2">
+  <Name>Pan 2</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="3">
+  <Name>Tilt 2</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="4">
+  <Name>Pan 3</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="5">
+  <Name>Tilt 3</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="6">
+  <Name>Pan 4</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="7">
+  <Name>Tilt 4</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="8">
+  <Name>Pan 5</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="9">
+  <Name>Tilt 5</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="10">
+  <Name>Pan 6</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="11">
+  <Name>Tilt 6</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="12">
+  <Name>Pan 7</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="13">
+  <Name>Tilt 7</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="14">
+  <Name>Pan 8</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="15">
+  <Name>Tilt 8</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="16">
+  <Name>Pan 9</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="17">
+  <Name>Tilt 9</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="18">
+  <Name>Pan 10</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="19">
+  <Name>Tilt 10</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="20">
+  <Name>Pan 11</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="21">
+  <Name>Tilt 11</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="22">
+  <Name>Pan 12</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="23">
+  <Name>Tilt 12</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="24">
+  <Name>Pan 13</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="25">
+  <Name>Tilt 13</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="26">
+  <Name>Pan 14</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="27">
+  <Name>Tilt 14</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="28">
+  <Name>Pan 15</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="29">
+  <Name>Tilt 15</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="30">
+  <Name>Pan 16</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="31">
+  <Name>Tilt 16</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="32">
+  <Name>Pan 17</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="33">
+  <Name>Tilt 17</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="34">
+  <Name>Pan 18</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="35">
+  <Name>Tilt 18</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="36">
+  <Name>Pan 19</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="37">
+  <Name>Tilt 19</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="38">
+  <Name>Pan 20</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="39">
+  <Name>Tilt 20</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="40">
+  <Name>Pan 21</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="41">
+  <Name>Tilt 21</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="42">
+  <Name>Pan 22</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="43">
+  <Name>Tilt 22</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="44">
+  <Name>Pan 23</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="45">
+  <Name>Tilt 23</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="46">
+  <Name>Pan 24</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="47">
+  <Name>Tilt 24</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="48">
+  <Name>Pan 25</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="49">
+  <Name>Tilt 25</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="50">
+  <Name>Pan 26</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="51">
+  <Name>Tilt 26</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="52">
+  <Name>Pan 27</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="53">
+  <Name>Tilt 27</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="54">
+  <Name>Pan 28</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="55">
+  <Name>Tilt 28</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="56">
+  <Name>Pan 29</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="57">
+  <Name>Tilt 29</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="58">
+  <Name>Pan 30</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="59">
+  <Name>Tilt 30</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="60">
+  <Name>Pan 31</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="61">
+  <Name>Tilt 31</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="62">
+  <Name>Pan 32</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="63">
+  <Name>Tilt 32</Name>
+  <Type>Slider</Type>
+ </Channel>
+</InputProfile>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Workspace>
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FIXANDFUNC">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>5.1.1 GIT</Version>
+  <Author>massimo</Author>
+ </Creator>
+ <Engine>
+  <InputOutputMap>
+   <BeatGenerator BeatType="Internal" BPM="120"/>
+   <Universe Name="Universe 1" ID="0">
+    <Input Plugin="MIDI" UID="input" Line="1" Profile="Akai APC Mini mk2"/>
+    <Feedback Plugin="MIDI" UID="input" Line="1"/>
+   </Universe>
+   <Universe Name="Universe 2" ID="1">
+    <Input Plugin="Loopback" UID="Loopback 1" Line="0"/>
+   </Universe>
+   <Universe Name="Universe 3" ID="2"/>
+   <Universe Name="Universe 4" ID="3"/>
+  </InputOutputMap>
+  <Function ID="0" Type="Video" Name="abstract_blue_smoke_light_372_3840x2400.jpg">
+   <Speed FadeIn="0" FadeOut="0" Duration="3000"/>
+   <RunOrder>Loop</RunOrder>
+   <Source Screen="1" Fullscreen="1" ZIndex="2">Documents/Immagini/abstract_blue_smoke_light_372_3840x2400.jpg</Source>
+  </Function>
+  <Function ID="1" Type="Video" Name="Entering The Stronghold _ Audio Visual Animation    HD!-0pXYp72dwl0.mkv">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source Screen="1" Fullscreen="1" Geometry="43,40,1280,720" ZIndex="2">Documents/Video/Entering The Stronghold _ Audio Visual Animation    HD!-0pXYp72dwl0.mkv</Source>
+  </Function>
+  <Function ID="2" Type="Video" Name="Abstract Animation - Crystal Tunnels-E4OjK9qnFcY.webm">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source Screen="1" Fullscreen="1" Geometry="600,400,1280,720" ZIndex="3">Documents/Video/Abstract Animation - Crystal Tunnels-E4OjK9qnFcY.webm</Source>
+  </Function>
+  <Monitor DisplayMode="0" ShowLabels="0">
+   <Font>Arial,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
+   <ChannelStyle>0</ChannelStyle>
+   <ValueStyle>0</ValueStyle>
+   <Grid Width="5" Height="3" Depth="5" Units="0" POV="1"/>
+   <StageItem>0</StageItem>
+  </Monitor>
+ </Engine>
+ <VirtualConsole>
+  <Frame Caption="Page 1" ID="0">
+   <Appearance>
+    <Font>Roboto Condensed,16,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
+   </Appearance>
+   <WindowState Visible="True" X="0" Y="0" Width="1920" Height="1080"/>
+   <AllowResize>False</AllowResize>
+   <ShowHeader>False</ShowHeader>
+   <ShowEnableButton>True</ShowEnableButton>
+   <Collapsed>False</Collapsed>
+   <Disabled>False</Disabled>
+   <Button Caption="Entering The Stronghold _ Audio Visual Animation    HD!-0pXYp72dwl0.mkv" ID="5">
+    <WindowState Visible="True" X="335" Y="117" Width="95" Height="95"/>
+    <Appearance>
+     <BackgroundColor>4282664004</BackgroundColor>
+    </Appearance>
+    <Function ID="1"/>
+    <Action>Toggle</Action>
+   </Button>
+   <Button Caption="abstract_blue_smoke_light_372_3840x2400.jpg" ID="4">
+    <WindowState Visible="True" X="167" Y="117" Width="95" Height="95"/>
+    <Appearance>
+     <BackgroundColor>4282664004</BackgroundColor>
+    </Appearance>
+    <Function ID="0"/>
+    <Action>Toggle</Action>
+   </Button>
+   <Button Caption="Abstract Animation - Crystal Tunnels-E4OjK9qnFcY.webm" ID="6">
+    <WindowState Visible="True" X="570" Y="117" Width="95" Height="95"/>
+    <Appearance>
+     <BackgroundColor>4282664004</BackgroundColor>
+    </Appearance>
+    <Function ID="2"/>
+    <Action>Toggle</Action>
+   </Button>
+  </Frame>
+ </VirtualConsole>
+</Workspace>

@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Workspace>
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VC">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>5.0.1</Version>
+  <Author>alast</Author>
+ </Creator>
+ <Engine>
+  <InputOutputMap>
+   <BeatGenerator BeatType="Internal" BPM="120"/>
+   <Universe Name="Universe 1" ID="0">
+    <Output Plugin="ArtNet" UID="127.0.0.1" Line="0"/>
+   </Universe>
+   <Universe Name="Universe 2" ID="1">
+    <Output Plugin="ArtNet" UID="127.0.0.1" Line="0"/>
+   </Universe>
+   <Universe Name="Universe 3" ID="2">
+    <Output Plugin="ArtNet" UID="127.0.0.1" Line="0"/>
+   </Universe>
+   <Universe Name="Universe 4" ID="3"/>
+  </InputOutputMap>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>0</ID>
+   <Name>Dimmers</Name>
+   <Universe>0</Universe>
+   <Address>0</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Function ID="0" Type="Scene" Name="Nueva Escena 0">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,255</FixtureVal>
+  </Function>
+  <Function ID="1" Type="Scene" Name="Nueva Escena 1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,255</FixtureVal>
+  </Function>
+  <Function ID="2" Type="Scene" Name="Nueva Escena 2">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,255</FixtureVal>
+  </Function>
+  <Function ID="3" Type="Scene" Name="Nueva Escena 3">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,255</FixtureVal>
+  </Function>
+  <Function ID="4" Type="Scene" Name="Nueva Escena 4">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,255</FixtureVal>
+  </Function>
+  <Function ID="5" Type="Scene" Name="Nueva Escena 5">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,255</FixtureVal>
+  </Function>
+  <Function ID="6" Type="Scene" Name="Nueva Escena 6">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,255</FixtureVal>
+  </Function>
+  <Function ID="7" Type="Scene" Name="Nueva Escena 7">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,255</FixtureVal>
+  </Function>
+  <Function ID="8" Type="Scene" Name="Nueva Escena 8">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,255</FixtureVal>
+  </Function>
+  <Function ID="9" Type="Scene" Name="Nueva Escena 9">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,255</FixtureVal>
+  </Function>
+  <Function ID="10" Type="Scene" Name="SOUND 1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,255</FixtureVal>
+  </Function>
+  <Function ID="11" Type="Collection" Name="Nueva Colección 11">
+   <Step Number="0">1</Step>
+   <Step Number="1">10</Step>
+  </Function>
+  <Function ID="12" Type="Chaser" Name="Sound">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="PerStep" FadeOut="PerStep" Duration="PerStep"/>
+   <Step Number="0" FadeIn="2000" Hold="4294967294" FadeOut="2000">10</Step>
+   <Step Number="1" FadeIn="2000" Hold="4294967294" FadeOut="2000">14</Step>
+   <Step Number="2" FadeIn="2000" Hold="4294967294" FadeOut="2000">15</Step>
+   <Step Number="3" FadeIn="0" Hold="4294967294" FadeOut="0">18</Step>
+   <Step Number="4" FadeIn="2000" Hold="4294967294" FadeOut="2000">17</Step>
+   <Step Number="5" FadeIn="0" Hold="4294967294" FadeOut="0">18</Step>
+   <Step Number="6" FadeIn="2000" Hold="4294967294" FadeOut="2000">16</Step>
+  </Function>
+  <Function ID="13" Type="Chaser" Name="Lights">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="PerStep" FadeOut="PerStep" Duration="PerStep"/>
+   <Step Number="0" FadeIn="1000" Hold="4294967294" FadeOut="2000">0</Step>
+   <Step Number="1" FadeIn="1000" Hold="4294967294" FadeOut="2000">1</Step>
+   <Step Number="2" FadeIn="1000" Hold="4294967294" FadeOut="2000">2</Step>
+   <Step Number="3" FadeIn="1000" Hold="4294967294" FadeOut="2000">3</Step>
+   <Step Number="4" FadeIn="1000" Hold="4294967294" FadeOut="2000">4</Step>
+   <Step Number="5" FadeIn="1000" Hold="4294967294" FadeOut="2000">5</Step>
+   <Step Number="6" FadeIn="1000" Hold="4294967294" FadeOut="2000">6</Step>
+   <Step Number="7" FadeIn="1000" Hold="4294967294" FadeOut="2000">7</Step>
+   <Step Number="8" FadeIn="1000" Hold="4294967294" FadeOut="2000">8</Step>
+   <Step Number="9" FadeIn="1000" Hold="4294967294" FadeOut="2000">9</Step>
+  </Function>
+  <Function ID="14" Type="Scene" Name="SOUND 2">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,255</FixtureVal>
+  </Function>
+  <Function ID="15" Type="Scene" Name="SOUND 3">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,255</FixtureVal>
+  </Function>
+  <Function ID="16" Type="Scene" Name="SOUND 5">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,255</FixtureVal>
+  </Function>
+  <Function ID="17" Type="Scene" Name="SOUND 4">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,255</FixtureVal>
+  </Function>
+  <Function ID="18" Type="Scene" Name="SILENCE">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,107</FixtureVal>
+  </Function>
+  <Monitor DisplayMode="0" ShowLabels="0">
+   <Font>Arial,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
+   <ChannelStyle>0</ChannelStyle>
+   <ValueStyle>0</ValueStyle>
+   <Grid Width="5" Height="3" Depth="5" Units="0"/>
+   <StageItem>0</StageItem>
+  </Monitor>
+ </Engine>
+ <VirtualConsole>
+  <Frame Caption="Page 1" ID="0">
+   <Appearance>
+    <BackgroundColor>4279966491</BackgroundColor>
+    <Font>Roboto Condensed,16,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
+   </Appearance>
+   <WindowState Visible="True" X="0" Y="0" Width="1920" Height="2500"/>
+   <AllowResize>False</AllowResize>
+   <ShowHeader>False</ShowHeader>
+   <ShowEnableButton>True</ShowEnableButton>
+   <Collapsed>False</Collapsed>
+   <Disabled>False</Disabled>
+   <CueList Caption="Lista de Cues" ID="0">
+    <WindowState Visible="True" X="1425" Y="65" Width="315" Height="240"/>
+    <Chaser>12</Chaser>
+    <NextPrevBehavior>1</NextPrevBehavior>
+    <SlidersMode>Crossfade</SlidersMode>
+    <Next>
+     <Key>2</Key>
+    </Next>
+    <Playback>
+     <Key>Space</Key>
+    </Playback>
+   </CueList>
+   <SoloFrame Caption="Sound Cues" ID="63">
+    <Appearance>
+     <BackgroundColor>4279966491</BackgroundColor>
+    </Appearance>
+    <WindowState Visible="True" X="910" Y="125" Width="180" Height="1185"/>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>True</ShowEnableButton>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Button Caption="Sound Cue 1" ID="53">
+     <WindowState Visible="True" X="5" Y="90" Width="130" Height="30"/>
+     <Function ID="10"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Sound Cue 4" ID="58">
+     <WindowState Visible="True" X="5" Y="650" Width="130" Height="30"/>
+     <Function ID="17"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Sound Cue 5" ID="62">
+     <WindowState Visible="True" X="5" Y="905" Width="130" Height="30"/>
+     <Function ID="16"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Sound Cue 2" ID="54">
+     <WindowState Visible="True" X="5" Y="205" Width="130" Height="30"/>
+     <Function ID="14"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Sound Cue 3" ID="55">
+     <WindowState Visible="True" X="5" Y="360" Width="130" Height="30"/>
+     <Function ID="15"/>
+     <Action>Toggle</Action>
+    </Button>
+   </SoloFrame>
+   <SoloFrame Caption="" ID="13">
+    <WindowState Visible="True" X="555" Y="20" Width="270" Height="70"/>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>False</ShowHeader>
+    <ShowEnableButton>True</ShowEnableButton>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Button Caption="SOUND 2" ID="15">
+     <WindowState Visible="True" X="60" Y="10" Width="50" Height="50"/>
+     <Function ID="14"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="SOUND 5" ID="18">
+     <WindowState Visible="True" X="210" Y="10" Width="50" Height="50"/>
+     <Function ID="16"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="SOUND 4" ID="17">
+     <WindowState Visible="True" X="160" Y="10" Width="50" Height="50"/>
+     <Function ID="17"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="SOUND 1" ID="14">
+     <WindowState Visible="True" X="10" Y="10" Width="50" Height="50"/>
+     <Function ID="10"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="SOUND 3" ID="16">
+     <WindowState Visible="True" X="110" Y="10" Width="50" Height="50"/>
+     <Function ID="15"/>
+     <Action>Toggle</Action>
+    </Button>
+   </SoloFrame>
+   <SoloFrame Caption="Light Cues" ID="42">
+    <Appearance>
+     <BackgroundColor>4279966491</BackgroundColor>
+    </Appearance>
+    <WindowState Visible="True" X="70" Y="125" Width="190" Height="1180"/>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>False</ShowEnableButton>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Button Caption="Light Cue 6" ID="47">
+     <WindowState Visible="True" X="55" Y="470" Width="130" Height="30"/>
+     <Function ID="5"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Light Cue 7" ID="49">
+     <WindowState Visible="True" X="55" Y="500" Width="130" Height="30"/>
+     <Function ID="6"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Light Cue 3" ID="44">
+     <WindowState Visible="True" X="55" Y="125" Width="130" Height="30"/>
+     <Function ID="2"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Light Cue 1" ID="50">
+     <WindowState Visible="True" X="55" Y="40" Width="130" Height="30"/>
+     <Function ID="0"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Light Cue 9" ID="51">
+     <WindowState Visible="True" X="55" Y="735" Width="130" Height="30"/>
+     <Function ID="8"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Light Cue 8" ID="48">
+     <WindowState Visible="True" X="55" Y="705" Width="130" Height="30"/>
+     <Function ID="7"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Light Cue 4" ID="45">
+     <WindowState Visible="True" X="55" Y="255" Width="130" Height="30"/>
+     <Function ID="3"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Light Cue 2" ID="43">
+     <WindowState Visible="True" X="55" Y="70" Width="130" Height="30"/>
+     <Function ID="1"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Light Cue 5" ID="46">
+     <WindowState Visible="True" X="55" Y="405" Width="130" Height="30"/>
+     <Function ID="4"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Light Cue 10" ID="52">
+     <WindowState Visible="True" X="55" Y="805" Width="130" Height="30"/>
+     <Function ID="9"/>
+     <Action>Toggle</Action>
+    </Button>
+   </SoloFrame>
+   <SoloFrame Caption="" ID="2">
+    <WindowState Visible="True" X="25" Y="20" Width="520" Height="70"/>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>False</ShowHeader>
+    <ShowEnableButton>True</ShowEnableButton>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Button Caption="Nueva Escena 3" ID="6">
+     <WindowState Visible="True" X="160" Y="10" Width="50" Height="50"/>
+     <Function ID="3"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Nueva Escena 9" ID="12">
+     <WindowState Visible="True" X="460" Y="10" Width="50" Height="50"/>
+     <Function ID="9"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Nueva Escena 5" ID="8">
+     <WindowState Visible="True" X="260" Y="10" Width="50" Height="50"/>
+     <Function ID="5"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Nueva Escena 8" ID="11">
+     <WindowState Visible="True" X="410" Y="10" Width="50" Height="50"/>
+     <Function ID="8"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Nueva Escena 6" ID="9">
+     <WindowState Visible="True" X="310" Y="10" Width="50" Height="50"/>
+     <Function ID="6"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Nueva Escena 4" ID="7">
+     <WindowState Visible="True" X="210" Y="10" Width="50" Height="50"/>
+     <Function ID="4"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Nueva Escena 1" ID="4">
+     <WindowState Visible="True" X="60" Y="10" Width="50" Height="50"/>
+     <Function ID="1"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Nueva Escena 2" ID="5">
+     <WindowState Visible="True" X="110" Y="10" Width="50" Height="50"/>
+     <Function ID="2"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Nueva Escena 7" ID="10">
+     <WindowState Visible="True" X="360" Y="10" Width="50" Height="50"/>
+     <Function ID="7"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Nueva Escena 0" ID="3">
+     <WindowState Visible="True" X="10" Y="10" Width="50" Height="50"/>
+     <Function ID="0"/>
+     <Action>Toggle</Action>
+    </Button>
+   </SoloFrame>
+   <CueList Caption="Lista de Cues" ID="1">
+    <WindowState Visible="True" X="1130" Y="65" Width="295" Height="240"/>
+    <Chaser>13</Chaser>
+    <NextPrevBehavior>1</NextPrevBehavior>
+    <SlidersMode>Crossfade</SlidersMode>
+    <Next>
+     <Key>1</Key>
+    </Next>
+    <Playback>
+     <Key>Space</Key>
+    </Playback>
+   </CueList>
+   <Label Caption="SCRIPT&#10;&#10;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis tempor ex. Curabitur consequat commodo est, in tincidunt nunc. Vivamus aliquam ut neque vel posuere. Morbi hendrerit ullamcorper lacus eget molestie. &#10;&#10;CUE&#10;&#10;Phasellus vulputate non dolor eget tristique. Nam tristique pulvinar egestas. Aliquam diam neque, laoreet id fermentum at, laoreet commodo risus. Vivamus id leo maximus, tempor lectus in, cursus mauris. Etiam molestie, nibh non euismod hendrerit, felis ipsum finibus lorem, ut sollicitudin nisl ante et erat. &#10;&#10;CUE&#10;&#10;Phasellus eu leo sed sapien aliquet lacinia sit amet fermentum arcu. Proin posuere eros quis felis imperdiet, id blandit dolor posuere. Phasellus feugiat volutpat risus ac efficitur. Nunc congue, libero in egestas vulputate, nisi sem aliquam metus, at efficitur sapien lectus eget ipsum. Aenean viverra, mi molestie sodales efficitur, purus arcu fermentum ligula, sed feugiat ante erat sed dolor.&#10;&#10;Maecenas vel viverra lacus, rhoncus lacinia odio. Proin viverra id quam nec vehicula. Morbi ac odio mi. Integer sed libero vulputate, sollicitudin ex sed, elementum ante. Curabitur et dolor volutpat lectus malesuada dapibus sit amet a risus. Vestibulum finibus sollicitudin nibh non fermentum. Nam fringilla fermentum odio vitae vestibulum. &#10;&#10;CUE&#10;&#10;Vestibulum convallis diam ac turpis feugiat porta. Pellentesque at fermentum turpis. Fusce erat ligula, suscipit at diam ut, egestas hendrerit metus. Duis viverra, felis eu bibendum tincidunt, ligula quam ullamcorper neque, sed condimentum mauris sem et arcu.&#10;&#10;Maecenas ornare nisl dui, cursus pretium orci venenatis sed. Mauris at pretium lacus. Fusce sed interdum risus. Etiam dapibus sollicitudin arcu a tristique. Praesent sed orci turpis. CUE Fusce eget neque quis ipsum tristique pharetra consequat sed libero. Mauris nec pulvinar odio. In in elit tincidunt, volutpat arcu a, ultrices urna. Praesent a ullamcorper CUE turpis. Aenean sollicitudin bibendum ex ac rhoncus. Vivamus dignissim metus at urna pellentesque luctus. Integer mattis, elit a congue elementum, ante orci ultrices sapien, in consequat mi tortor at risus. Morbi vitae luctus ex, quis tempus purus.&#10;&#10;Duis mattis tortor lacus, ac tempus enim lacinia ac. Praesent euismod nunc diam, id sagittis nisl eleifend eu. Morbi commodo ornare nisl, eu sollicitudin ex finibus quis. Praesent pellentesque erat lorem, CUE quis volutpat velit eleifend id. Nulla facilisi. Mauris scelerisque lacus eget vestibulum porttitor. In at felis tincidunt, feugiat nunc id, viverra eros.&#10;&#10;&#10;CUE&#10;&#10;Integer ut ipsum a nisi maximus ultrices. Donec sollicitudin, ex ut imperdiet finibus, purus nisi iaculis nibh, et sollicitudin libero ex vitae nibh. Integer posuere consectetur placerat. Vivamus porta erat ut pretium feugiat. Nullam fringilla mattis massa nec eleifend. Suspendisse convallis dui eu mauris tincidunt, in dignissim diam aliquet. Pellentesque orci libero, commodo et ultrices at, porttitor non lorem. Ut arcu ex, aliquet ac ultrices id, mattis a ligula. Curabitur eget ligula vel enim sodales CUE dapibus quis ac felis. Cras quis condimentum leo. Nullam at metus a felis elementum vulputate vitae viverra sem. Praesent egestas elit ex, id aliquet arcu convallis at. Duis ornare, lectus eu blandit dapibus, metus lorem faucibus odio, feugiat hendrerit nibh nisi eu enim. " ID="41">
+    <WindowState Visible="True" X="260" Y="125" Width="650" Height="1185"/>
+    <Appearance>
+     <BackgroundColor>4281742902</BackgroundColor>
+     <Font>Ubuntu Mono,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
+    </Appearance>
+   </Label>
+   <Label Caption="Next mapped to &quot;1&quot; and &quot;2&quot; respectivly" ID="20">
+    <WindowState Visible="True" X="1280" Y="335" Width="325" Height="40"/>
+    <Appearance>
+     <Font>Ubuntu,11,-1,5,700,1,0,0,0,0,0,0,0,0,0,1</Font>
+    </Appearance>
+   </Label>
+   <Label Caption="Play mapped to &quot;Space&quot; in both Cue lists." ID="19">
+    <WindowState Visible="True" X="1280" Y="305" Width="325" Height="40"/>
+    <Appearance>
+     <Font>Ubuntu,11,-1,5,700,1,0,0,0,0,0,0,0,0,0,1</Font>
+    </Appearance>
+   </Label>
+   <Label Caption="https://www.qlcplus.org/forum/viewtopic.php?t=9794" ID="21">
+    <WindowState Visible="True" X="1138" Y="490" Width="412" Height="58"/>
+   </Label>
+  </Frame>
+ </VirtualConsole>
+</Workspace>
