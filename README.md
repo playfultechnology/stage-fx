@@ -54,7 +54,8 @@ QLC+ can often _see_ the device, but does not appear to send any output to it. I
 
 ![No serial number](https://github.com/playfultechnology/stage-fx/blob/main/Images/FT232_Dongle_BadSN.png)
 
-If not, make sure that you have installed the official FT232 drivers from https://ftdichip.com/drivers/d2xx-drivers/ (not the Microsoft ones)
+If not, make sure that you have installed the official FT232 drivers from https://ftdichip.com/drivers/d2xx-drivers/ (not the Microsoft ones).
+The current driver package (for Windows 64-bit) is named [CDM-v2.12.36.20-WHQL-Certified.zip](https://ftdichip.com/wp-content/uploads/2025/03/CDM-v2.12.36.20-WHQL-Certified.zip)
 This should make the device properly recognised as follows:
 
 ![Serial number](https://github.com/playfultechnology/stage-fx/blob/main/Images/FT232_Dongle_GoodSN.png)
