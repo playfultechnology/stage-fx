@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VC">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FIXANDFUNC">
  <Creator>
   <Name>Q Light Controller Plus</Name>
-  <Version>5.2.0</Version>
+  <Version>5.2.1</Version>
   <Author>alast</Author>
  </Creator>
  <Engine Autostart="5">
   <InputOutputMap>
    <BeatGenerator BeatType="Internal" BPM="120"/>
+   <NetworkServer Type="Native" AutoStart="False" Name="QLC+_A9FEDBE5" Password=""/>
    <Universe Name="Universe 1" ID="0">
-    <Output Plugin="DMX USB" UID="None" Line="0"/>
+    <Output Plugin="DMX USB" UID="FT232R USB UART (S/N: A50285BI)" Line="0">
+     <PluginParameters UniverseChannels="4"/>
+    </Output>
    </Universe>
    <Universe Name="Universe 2" ID="1">
     <Output Plugin="E1.31" UID="192.168.4.1" Line="5"/>
@@ -22,8 +25,8 @@
     <Output Plugin="E1.31" UID="192.168.4.1" Line="5"/>
    </Universe>
    <Universe Name="Universe 5" ID="4">
-    <Input Plugin="MIDI" UID="None" Line="0" Profile="Akai APC Mini mk2"/>
-    <Feedback Plugin="MIDI" UID="None" Line="1"/>
+    <Input Plugin="MIDI" UID="APC mini mk2" Line="0" Profile="Akai APC Mini mk2"/>
+    <Feedback Plugin="MIDI" UID="APC mini mk2" Line="1"/>
    </Universe>
   </InputOutputMap>
   <Fixture>
@@ -35,6 +38,16 @@
    <Universe>4</Universe>
    <Address>0</Address>
    <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>4 Channel</Mode>
+   <ID>2</ID>
+   <Name>Generic Dimmer</Name>
+   <Universe>0</Universe>
+   <Address>0</Address>
+   <Channels>4</Channels>
   </Fixture>
   <Function ID="0" Type="Scene" Name="New Scene 0">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -71,664 +84,1221 @@
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
   </Function>
+  <Function ID="8" Type="Scene" Name="APC Test Button 1_8">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,169</FixtureVal>
+  </Function>
+  <Function ID="9" Type="Scene" Name="APC Test Button 2_8">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,172</FixtureVal>
+  </Function>
+  <Function ID="10" Type="Scene" Name="APC Test Button 3_8">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,175</FixtureVal>
+  </Function>
+  <Function ID="11" Type="Scene" Name="APC Test Button 4_8">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,178</FixtureVal>
+  </Function>
+  <Function ID="12" Type="Scene" Name="APC Test Button 5_8">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,181</FixtureVal>
+  </Function>
+  <Function ID="13" Type="Scene" Name="APC Test Button 6_8">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,184</FixtureVal>
+  </Function>
+  <Function ID="14" Type="Scene" Name="APC Test Button 7_8">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,187</FixtureVal>
+  </Function>
+  <Function ID="15" Type="Scene" Name="APC Test Button 8_8">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,190</FixtureVal>
+  </Function>
+  <Function ID="16" Type="Scene" Name="APC Test Button 1_7">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,145</FixtureVal>
+  </Function>
+  <Function ID="17" Type="Scene" Name="APC Test Button 2_7">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,148</FixtureVal>
+  </Function>
+  <Function ID="18" Type="Scene" Name="APC Test Button 3_7">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,151</FixtureVal>
+  </Function>
+  <Function ID="19" Type="Scene" Name="APC Test Button 4_7">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,154</FixtureVal>
+  </Function>
+  <Function ID="20" Type="Scene" Name="APC Test Button 5_7">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,157</FixtureVal>
+  </Function>
+  <Function ID="21" Type="Scene" Name="APC Test Button 6_7">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,160</FixtureVal>
+  </Function>
+  <Function ID="22" Type="Scene" Name="APC Test Button 7_7">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,163</FixtureVal>
+  </Function>
+  <Function ID="23" Type="Scene" Name="APC Test Button 8_7">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,166</FixtureVal>
+  </Function>
+  <Function ID="24" Type="Scene" Name="APC Test Button 1_6">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,121</FixtureVal>
+  </Function>
+  <Function ID="25" Type="Scene" Name="APC Test Button 2_6">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,124</FixtureVal>
+  </Function>
+  <Function ID="26" Type="Scene" Name="APC Test Button 3_6">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,127</FixtureVal>
+  </Function>
+  <Function ID="27" Type="Scene" Name="APC Test Button 4_6">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,130</FixtureVal>
+  </Function>
+  <Function ID="28" Type="Scene" Name="APC Test Button 5_6">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,133</FixtureVal>
+  </Function>
+  <Function ID="29" Type="Scene" Name="APC Test Button 6_6">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,136</FixtureVal>
+  </Function>
+  <Function ID="30" Type="Scene" Name="APC Test Button 7_6">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,139</FixtureVal>
+  </Function>
+  <Function ID="31" Type="Scene" Name="APC Test Button 8_6">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,142</FixtureVal>
+  </Function>
+  <Function ID="32" Type="Scene" Name="APC Test Button 1_5">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,97</FixtureVal>
+  </Function>
+  <Function ID="33" Type="Scene" Name="APC Test Button 2_5">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,100</FixtureVal>
+  </Function>
+  <Function ID="34" Type="Scene" Name="APC Test Button 3_5">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,103</FixtureVal>
+  </Function>
+  <Function ID="35" Type="Scene" Name="APC Test Button 4_5">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,106</FixtureVal>
+  </Function>
+  <Function ID="36" Type="Scene" Name="APC Test Button 5_5">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,109</FixtureVal>
+  </Function>
+  <Function ID="37" Type="Scene" Name="APC Test Button 6_5">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,112</FixtureVal>
+  </Function>
+  <Function ID="38" Type="Scene" Name="APC Test Button 7_5">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,115</FixtureVal>
+  </Function>
+  <Function ID="39" Type="Scene" Name="APC Test Button 8_5">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,118</FixtureVal>
+  </Function>
+  <Function ID="40" Type="Scene" Name="APC Test Button 1_4">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,73</FixtureVal>
+  </Function>
+  <Function ID="41" Type="Scene" Name="APC Test Button 2_4">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,76</FixtureVal>
+  </Function>
+  <Function ID="42" Type="Scene" Name="APC Test Button 3_4">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,79</FixtureVal>
+  </Function>
+  <Function ID="43" Type="Scene" Name="APC Test Button 4_4">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,82</FixtureVal>
+  </Function>
+  <Function ID="44" Type="Scene" Name="APC Test Button 5_4">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,85</FixtureVal>
+  </Function>
+  <Function ID="45" Type="Scene" Name="APC Test Button 6_4">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,88</FixtureVal>
+  </Function>
+  <Function ID="46" Type="Scene" Name="APC Test Button 7_4">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,91</FixtureVal>
+  </Function>
+  <Function ID="47" Type="Scene" Name="APC Test Button 8_4">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,94</FixtureVal>
+  </Function>
+  <Function ID="48" Type="Scene" Name="APC Test Button 1_3">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,49</FixtureVal>
+  </Function>
+  <Function ID="49" Type="Scene" Name="APC Test Button 2_3">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,52</FixtureVal>
+  </Function>
+  <Function ID="50" Type="Scene" Name="APC Test Button 3_3">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,55</FixtureVal>
+  </Function>
+  <Function ID="51" Type="Scene" Name="APC Test Button 4_3">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,58</FixtureVal>
+  </Function>
+  <Function ID="52" Type="Scene" Name="APC Test Button 5_3">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,61</FixtureVal>
+  </Function>
+  <Function ID="53" Type="Scene" Name="APC Test Button 6_3">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,64</FixtureVal>
+  </Function>
+  <Function ID="54" Type="Scene" Name="APC Test Button 7_3">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,67</FixtureVal>
+  </Function>
+  <Function ID="55" Type="Scene" Name="APC Test Button 8_3">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,70</FixtureVal>
+  </Function>
+  <Function ID="56" Type="Scene" Name="APC Test Button 1_2">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,25</FixtureVal>
+  </Function>
+  <Function ID="57" Type="Scene" Name="APC Test Button 2_2">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,28</FixtureVal>
+  </Function>
+  <Function ID="58" Type="Scene" Name="APC Test Button 3_2">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,31</FixtureVal>
+  </Function>
+  <Function ID="59" Type="Scene" Name="APC Test Button 4_2">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,34</FixtureVal>
+  </Function>
+  <Function ID="60" Type="Scene" Name="APC Test Button 5_2">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,37</FixtureVal>
+  </Function>
+  <Function ID="61" Type="Scene" Name="APC Test Button 6_2">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,40</FixtureVal>
+  </Function>
+  <Function ID="62" Type="Scene" Name="APC Test Button 7_2">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,43</FixtureVal>
+  </Function>
+  <Function ID="63" Type="Scene" Name="APC Test Button 8_2">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,46</FixtureVal>
+  </Function>
+  <Function ID="64" Type="Scene" Name="APC Test Button 1_1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,1</FixtureVal>
+  </Function>
+  <Function ID="65" Type="Scene" Name="APC Test Button 2_1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,4</FixtureVal>
+  </Function>
+  <Function ID="66" Type="Scene" Name="APC Test Button 3_1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,7</FixtureVal>
+  </Function>
+  <Function ID="67" Type="Scene" Name="APC Test Button 4_1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,10</FixtureVal>
+  </Function>
+  <Function ID="68" Type="Scene" Name="APC Test Button 5_1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,13</FixtureVal>
+  </Function>
+  <Function ID="69" Type="Scene" Name="APC Test Button 6_1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,16</FixtureVal>
+  </Function>
+  <Function ID="70" Type="Scene" Name="APC Test Button 7_1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,19</FixtureVal>
+  </Function>
+  <Function ID="71" Type="Scene" Name="APC Test Button 8_1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,22</FixtureVal>
+  </Function>
+  <Function ID="72" Type="Scene" Name="APC Test Volume">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,7</FixtureVal>
+  </Function>
+  <Function ID="73" Type="Scene" Name="APC Test Pan">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,14</FixtureVal>
+  </Function>
+  <Function ID="74" Type="Scene" Name="APC Test Send">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,21</FixtureVal>
+  </Function>
+  <Function ID="75" Type="Scene" Name="APC Test Device">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,28</FixtureVal>
+  </Function>
+  <Function ID="76" Type="Scene" Name="APC Test Up">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,35</FixtureVal>
+  </Function>
+  <Function ID="77" Type="Scene" Name="APC Test Down">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,42</FixtureVal>
+  </Function>
+  <Function ID="78" Type="Scene" Name="APC Test Left">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,49</FixtureVal>
+  </Function>
+  <Function ID="79" Type="Scene" Name="APC Test Right">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,56</FixtureVal>
+  </Function>
+  <Function ID="80" Type="Scene" Name="APC Test Clip Stop">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,199</FixtureVal>
+  </Function>
+  <Function ID="81" Type="Scene" Name="APC Test Solo">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,206</FixtureVal>
+  </Function>
+  <Function ID="82" Type="Scene" Name="APC Test Mute">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,213</FixtureVal>
+  </Function>
+  <Function ID="83" Type="Scene" Name="APC Test Rec Arm">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,220</FixtureVal>
+  </Function>
+  <Function ID="84" Type="Scene" Name="APC Test Select">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,227</FixtureVal>
+  </Function>
+  <Function ID="85" Type="Scene" Name="APC Test Drum">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,234</FixtureVal>
+  </Function>
+  <Function ID="86" Type="Scene" Name="APC Test Note">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,241</FixtureVal>
+  </Function>
+  <Function ID="87" Type="Scene" Name="APC Test Stop All Clips">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,248</FixtureVal>
+  </Function>
+  <Function ID="88" Type="Scene" Name="APC Test Shift">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,171</FixtureVal>
+  </Function>
   <Monitor DisplayMode="0" ShowLabels="0">
    <Font>MS Shell Dlg 2,8,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
    <ChannelStyle>0</ChannelStyle>
    <ValueStyle>0</ValueStyle>
    <Grid Width="5" Height="3" Depth="5" Units="0" POV="1"/>
    <StageItem>0</StageItem>
-   <FxItem ID="0" XPos="0" YPos="1000" ZPos="0"/>
+   <FxItem ID="0" XPos="22.5" YPos="1000" ZPos="0"/>
+   <FxItem ID="2" XPos="0" YPos="0" ZPos="0"/>
   </Monitor>
  </Engine>
  <VirtualConsole>
-  <Frame Caption="Page 4" ID="3">
+  <Frame Caption="AKAI APC mini" ID="3">
    <Appearance>
     <Font>MS Shell Dlg 2,8,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
    </Appearance>
-   <WindowState Visible="True" X="0" Y="0" Width="1920" Height="1080"/>
+   <WindowState Visible="True" X="0" Y="0" Width="1920" Height="1215"/>
    <AllowResize>False</AllowResize>
    <ShowHeader>False</ShowHeader>
    <ShowEnableButton>True</ShowEnableButton>
    <Collapsed>False</Collapsed>
    <Disabled>False</Disabled>
-   <Frame Caption="Sliders" ID="5">
-    <WindowState Visible="True" X="7" Y="612" Width="1299" Height="288"/>
+   <Frame Caption="Frame Buttons" ID="78">
+    <WindowState Visible="True" X="0" Y="0" Width="409" Height="225"/>
     <AllowResize>True</AllowResize>
     <ShowHeader>False</ShowHeader>
-    <ShowEnableButton>True</ShowEnableButton>
+    <ShowEnableButton>False</ShowEnableButton>
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
-    <Slider Caption="Slider 9" ID="8" WidgetStyle="Slider" InvertedAppearance="false">
-     <WindowState Visible="True" X="1368" Y="0" Width="158" Height="144"/>
+    <Button Caption="Button 3_2" ID="123">
+     <WindowState Visible="True" X="105" Y="170" Width="45" Height="22"/>
      <Appearance>
       <BackgroundColor>4282664004</BackgroundColor>
      </Appearance>
-     <Input ID="0" Universe="4" Channel="56"/>
-     <SliderMode ValueDisplayStyle="Exact">Submaster</SliderMode>
-     <Level LowLimit="0" HighLimit="255" Value="0"/>
-    </Slider>
-    <Slider Caption="Slider 14" ID="13" WidgetStyle="Slider" InvertedAppearance="false">
-     <WindowState Visible="True" X="651" Y="0" Width="158" Height="144"/>
+     <Function ID="58"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="138" LowerValue="1" UpperValue="13" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 7_7" ID="117">
+     <WindowState Visible="True" X="308" Y="31" Width="45" Height="22"/>
      <Appearance>
       <BackgroundColor>4282664004</BackgroundColor>
      </Appearance>
-     <Input ID="0" Universe="4" Channel="52"/>
-     <SliderMode ValueDisplayStyle="Exact">Submaster</SliderMode>
-     <Level LowLimit="0" HighLimit="255" Value="0"/>
-    </Slider>
-    <Slider Caption="Slider 7" ID="6" WidgetStyle="Slider" InvertedAppearance="false">
-     <WindowState Visible="True" X="813" Y="0" Width="158" Height="144"/>
+     <Function ID="22"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="182" LowerValue="1" UpperValue="49" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 6_2" ID="107">
+     <WindowState Visible="True" X="257" Y="170" Width="45" Height="22"/>
      <Appearance>
       <BackgroundColor>4282664004</BackgroundColor>
      </Appearance>
-     <Input ID="0" Universe="4" Channel="53"/>
-     <SliderMode ValueDisplayStyle="Exact">Submaster</SliderMode>
-     <Level LowLimit="0" HighLimit="255" Value="0"/>
-    </Slider>
-    <Slider Caption="Slider 8" ID="7" WidgetStyle="Slider" InvertedAppearance="false">
-     <WindowState Visible="True" X="3" Y="0" Width="158" Height="144"/>
+     <Function ID="61"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="141" LowerValue="1" UpperValue="45" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 2_1" ID="84">
+     <WindowState Visible="True" X="55" Y="197" Width="45" Height="22"/>
      <Appearance>
       <BackgroundColor>4282664004</BackgroundColor>
      </Appearance>
-     <Input ID="0" Universe="4" Channel="48"/>
-     <SliderMode ValueDisplayStyle="Exact">Submaster</SliderMode>
-     <Level LowLimit="0" HighLimit="255" Value="0"/>
-    </Slider>
-    <Slider Caption="Slider 11" ID="10" WidgetStyle="Slider" InvertedAppearance="false">
-     <WindowState Visible="True" X="975" Y="0" Width="158" Height="144"/>
+     <Function ID="65"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="129" LowerValue="1" UpperValue="9" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 2_8" ID="92">
+     <WindowState Visible="True" X="55" Y="4" Width="45" Height="22"/>
      <Appearance>
       <BackgroundColor>4282664004</BackgroundColor>
      </Appearance>
-     <Input ID="0" Universe="4" Channel="54"/>
-     <SliderMode ValueDisplayStyle="Exact">Submaster</SliderMode>
-     <Level LowLimit="0" HighLimit="255" Value="0"/>
-    </Slider>
-    <Slider Caption="Slider 12" ID="11" WidgetStyle="Slider" InvertedAppearance="false">
-     <WindowState Visible="True" X="327" Y="0" Width="158" Height="144"/>
+     <Function ID="9"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="185" LowerValue="1" UpperValue="9" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 5_8" ID="131">
+     <WindowState Visible="True" X="207" Y="4" Width="45" Height="22"/>
      <Appearance>
       <BackgroundColor>4282664004</BackgroundColor>
      </Appearance>
-     <Input ID="0" Universe="4" Channel="50"/>
-     <SliderMode ValueDisplayStyle="Exact">Submaster</SliderMode>
-     <Level LowLimit="0" HighLimit="255" Value="0"/>
-    </Slider>
-    <Slider Caption="Slider 10" ID="9" WidgetStyle="Slider" InvertedAppearance="false">
-     <WindowState Visible="True" X="165" Y="0" Width="158" Height="144"/>
+     <Function ID="12"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="188" LowerValue="1" UpperValue="37" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 3_1" ID="122">
+     <WindowState Visible="True" X="105" Y="197" Width="45" Height="22"/>
      <Appearance>
       <BackgroundColor>4282664004</BackgroundColor>
      </Appearance>
-     <Input ID="0" Universe="4" Channel="49"/>
-     <SliderMode ValueDisplayStyle="Exact">Submaster</SliderMode>
-     <Level LowLimit="0" HighLimit="255" Value="0"/>
-    </Slider>
-    <Slider Caption="Slider 5" ID="4" WidgetStyle="Slider" InvertedAppearance="false">
-     <WindowState Visible="True" X="1137" Y="0" Width="158" Height="144"/>
+     <Function ID="66"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="130" LowerValue="1" UpperValue="13" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 7_8" ID="99">
+     <WindowState Visible="True" X="308" Y="4" Width="45" Height="22"/>
      <Appearance>
       <BackgroundColor>4282664004</BackgroundColor>
      </Appearance>
-     <Input ID="0" Universe="4" Channel="55"/>
-     <SliderMode ValueDisplayStyle="Exact">Submaster</SliderMode>
-     <Level LowLimit="0" HighLimit="255" Value="0"/>
-    </Slider>
-    <Slider Caption="Slider 13" ID="12" WidgetStyle="Slider" InvertedAppearance="false">
-     <WindowState Visible="True" X="489" Y="0" Width="158" Height="144"/>
+     <Function ID="14"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="190" LowerValue="1" UpperValue="49" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 8_8" ID="102">
+     <WindowState Visible="True" X="358" Y="4" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="15"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="191" LowerValue="1" UpperValue="53" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 5_1" ID="96">
+     <WindowState Visible="True" X="207" Y="197" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="68"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="132" LowerValue="1" UpperValue="37" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 6_3" ID="113">
+     <WindowState Visible="True" X="257" Y="142" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="53"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="149" LowerValue="1" UpperValue="45" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 1_2" ID="93">
+     <WindowState Visible="True" X="4" Y="170" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="56"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="136" LowerValue="1" UpperValue="5" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 2_6" ID="86">
+     <WindowState Visible="True" X="55" Y="59" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="25"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="169" LowerValue="1" UpperValue="9" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 7_6" ID="118">
+     <WindowState Visible="True" X="308" Y="59" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="30"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="174" LowerValue="1" UpperValue="49" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 7_5" ID="105">
+     <WindowState Visible="True" X="308" Y="87" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="38"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="166" LowerValue="1" UpperValue="49" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 3_6" ID="141">
+     <WindowState Visible="True" X="105" Y="59" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="26"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="170" LowerValue="1" UpperValue="13" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 1_6" ID="89">
+     <WindowState Visible="True" X="4" Y="59" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="24"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="168" LowerValue="1" UpperValue="5" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 1_4" ID="88">
+     <WindowState Visible="True" X="4" Y="115" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="40"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="152" LowerValue="1" UpperValue="5" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 6_5" ID="106">
+     <WindowState Visible="True" X="257" Y="87" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="37"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="165" LowerValue="1" UpperValue="45" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 4_1" ID="130">
+     <WindowState Visible="True" X="156" Y="197" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="67"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="131" LowerValue="1" UpperValue="21" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 6_6" ID="101">
+     <WindowState Visible="True" X="257" Y="59" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="29"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="173" LowerValue="1" UpperValue="45" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 2_5" ID="80">
+     <WindowState Visible="True" X="55" Y="87" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="33"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="161" LowerValue="1" UpperValue="9" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 8_7" ID="110">
+     <WindowState Visible="True" X="358" Y="31" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="23"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="183" LowerValue="1" UpperValue="53" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 1_5" ID="91">
+     <WindowState Visible="True" X="4" Y="87" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="32"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="160" LowerValue="1" UpperValue="5" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 1_8" ID="94">
+     <WindowState Visible="True" X="4" Y="4" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="8"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="184" LowerValue="1" UpperValue="5" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 7_2" ID="111">
+     <WindowState Visible="True" X="308" Y="170" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="62"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="142" LowerValue="1" UpperValue="49" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 5_2" ID="137">
+     <WindowState Visible="True" X="207" Y="170" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="60"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="140" LowerValue="1" UpperValue="37" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 5_4" ID="133">
+     <WindowState Visible="True" X="207" Y="115" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="44"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="156" LowerValue="1" UpperValue="37" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 8_4" ID="114">
+     <WindowState Visible="True" X="358" Y="115" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="47"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="159" LowerValue="1" UpperValue="53" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 8_5" ID="112">
+     <WindowState Visible="True" X="358" Y="87" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="39"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="167" LowerValue="1" UpperValue="53" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 5_6" ID="127">
+     <WindowState Visible="True" X="207" Y="59" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="28"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="172" LowerValue="1" UpperValue="37" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 1_7" ID="87">
+     <WindowState Visible="True" X="4" Y="31" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="16"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="176" LowerValue="1" UpperValue="5" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 4_5" ID="142">
+     <WindowState Visible="True" X="156" Y="87" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="35"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="163" LowerValue="1" UpperValue="21" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 1_1" ID="95">
+     <WindowState Visible="True" X="4" Y="197" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="64"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="128" LowerValue="1" UpperValue="5" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 5_5" ID="129">
+     <WindowState Visible="True" X="207" Y="87" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="36"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="164" LowerValue="1" UpperValue="37" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 7_3" ID="120">
+     <WindowState Visible="True" X="308" Y="142" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="54"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="150" LowerValue="1" UpperValue="49" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 4_3" ID="126">
+     <WindowState Visible="True" X="156" Y="142" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="51"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="147" LowerValue="1" UpperValue="21" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 2_4" ID="81">
+     <WindowState Visible="True" X="55" Y="115" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="41"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="153" LowerValue="1" UpperValue="9" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 8_2" ID="97">
+     <WindowState Visible="True" X="358" Y="170" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="63"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="143" LowerValue="1" UpperValue="53" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 4_7" ID="138">
+     <WindowState Visible="True" X="156" Y="31" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="19"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="179" LowerValue="1" UpperValue="21" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 4_6" ID="128">
+     <WindowState Visible="True" X="156" Y="59" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="27"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="171" LowerValue="1" UpperValue="21" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 1_3" ID="90">
+     <WindowState Visible="True" X="4" Y="142" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="48"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="144" LowerValue="1" UpperValue="5" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 2_7" ID="85">
+     <WindowState Visible="True" X="55" Y="31" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="17"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="177" LowerValue="1" UpperValue="9" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 3_7" ID="139">
+     <WindowState Visible="True" X="105" Y="31" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="18"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="178" LowerValue="1" UpperValue="13" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 8_6" ID="103">
+     <WindowState Visible="True" X="358" Y="59" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="31"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="175" LowerValue="1" UpperValue="53" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 6_7" ID="100">
+     <WindowState Visible="True" X="257" Y="31" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="21"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="181" LowerValue="1" UpperValue="45" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 4_4" ID="124">
+     <WindowState Visible="True" X="156" Y="115" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="43"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="155" LowerValue="1" UpperValue="21" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 6_1" ID="116">
+     <WindowState Visible="True" X="257" Y="197" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="69"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="133" LowerValue="1" UpperValue="45" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 3_4" ID="132">
+     <WindowState Visible="True" X="105" Y="115" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="42"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="154" LowerValue="1" UpperValue="13" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 4_2" ID="125">
+     <WindowState Visible="True" X="156" Y="170" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="59"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="139" LowerValue="1" UpperValue="21" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 6_4" ID="109">
+     <WindowState Visible="True" X="257" Y="115" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="45"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="157" LowerValue="1" UpperValue="45" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 2_3" ID="82">
+     <WindowState Visible="True" X="55" Y="142" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="49"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="145" LowerValue="1" UpperValue="9" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 3_3" ID="136">
+     <WindowState Visible="True" X="105" Y="142" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="50"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="146" LowerValue="1" UpperValue="13" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 5_7" ID="134">
+     <WindowState Visible="True" X="207" Y="31" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="20"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="180" LowerValue="1" UpperValue="37" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 8_3" ID="104">
+     <WindowState Visible="True" X="358" Y="142" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="55"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="151" LowerValue="1" UpperValue="53" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 8_1" ID="98">
+     <WindowState Visible="True" X="358" Y="197" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="71"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="135" LowerValue="1" UpperValue="53" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 2_2" ID="83">
+     <WindowState Visible="True" X="55" Y="170" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="57"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="137" LowerValue="1" UpperValue="9" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 3_8" ID="79">
+     <WindowState Visible="True" X="105" Y="4" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="10"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="186" LowerValue="1" UpperValue="13" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 3_5" ID="121">
+     <WindowState Visible="True" X="105" Y="87" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="34"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="162" LowerValue="1" UpperValue="13" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 4_8" ID="140">
+     <WindowState Visible="True" X="156" Y="4" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="11"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="187" LowerValue="1" UpperValue="21" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 6_8" ID="108">
+     <WindowState Visible="True" X="257" Y="4" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="13"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="189" LowerValue="1" UpperValue="45" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 7_4" ID="119">
+     <WindowState Visible="True" X="308" Y="115" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="46"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="158" LowerValue="1" UpperValue="49" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 7_1" ID="115">
+     <WindowState Visible="True" X="308" Y="197" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="70"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="134" LowerValue="1" UpperValue="49" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Button 5_3" ID="135">
+     <WindowState Visible="True" X="207" Y="142" Width="45" Height="22"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="52"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="148" LowerValue="1" UpperValue="37" LowerParams="0" UpperParams="6" MonitorParams="6"/>
+    </Button>
+   </Frame>
+   <Frame Caption="Mode Buttons" ID="8">
+    <Appearance>
+     <BackgroundColor>4282664004</BackgroundColor>
+    </Appearance>
+    <WindowState Visible="True" X="0" Y="225" Width="409" Height="27"/>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>False</ShowHeader>
+    <ShowEnableButton>False</ShowEnableButton>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Button Caption="Volume" ID="0">
+     <WindowState Visible="True" X="18" Y="4" Width="18" Height="18"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="72"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="228" LowerValue="1" UpperValue="2"/>
+    </Button>
+    <Button Caption="Device" ID="3">
+     <WindowState Visible="True" X="170" Y="4" Width="18" Height="18"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="75"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="231" LowerValue="1" UpperValue="2"/>
+    </Button>
+    <Button Caption="Send" ID="2">
+     <WindowState Visible="True" X="119" Y="4" Width="18" Height="18"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="74"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="230" LowerValue="1" UpperValue="2"/>
+    </Button>
+    <Button Caption="Left" ID="6">
+     <WindowState Visible="True" X="322" Y="4" Width="18" Height="18"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="78"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="234" LowerValue="1" UpperValue="2"/>
+    </Button>
+    <Button Caption="Down" ID="5">
+     <WindowState Visible="True" X="271" Y="4" Width="18" Height="18"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="77"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="233" LowerValue="1" UpperValue="2"/>
+    </Button>
+    <Button Caption="Up" ID="4">
+     <WindowState Visible="True" X="220" Y="4" Width="18" Height="18"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="76"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="232" LowerValue="1" UpperValue="2"/>
+    </Button>
+    <Button Caption="Right" ID="7">
+     <WindowState Visible="True" X="372" Y="4" Width="18" Height="18"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="79"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="235" LowerValue="1" UpperValue="2"/>
+    </Button>
+    <Button Caption="Pan" ID="1">
+     <WindowState Visible="True" X="69" Y="4" Width="18" Height="18"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="73"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="229" LowerValue="1" UpperValue="2"/>
+    </Button>
+   </Frame>
+   <Frame Caption="Sliders" ID="18">
+    <WindowState Visible="True" X="0" Y="253" Width="460" Height="115"/>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>False</ShowHeader>
+    <ShowEnableButton>False</ShowEnableButton>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Slider Caption="Slider 4" ID="12" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="True" X="156" Y="4" Width="45" Height="105"/>
      <Appearance>
       <BackgroundColor>4282664004</BackgroundColor>
      </Appearance>
      <Input ID="0" Universe="4" Channel="51"/>
-     <SliderMode ValueDisplayStyle="Exact">Submaster</SliderMode>
-     <Level LowLimit="0" HighLimit="255" Value="0"/>
+     <SliderMode ValueDisplayStyle="Exact">Level</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="0">
+      <Channel Fixture="1">0</Channel>
+      <Channel Fixture="2">3</Channel>
+     </Level>
+    </Slider>
+    <Slider Caption="Slider 6" ID="14" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="True" X="257" Y="4" Width="45" Height="105"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Input ID="0" Universe="4" Channel="53"/>
+     <SliderMode ValueDisplayStyle="Exact">Level</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="0">
+      <Channel Fixture="1">0</Channel>
+     </Level>
+    </Slider>
+    <Slider Caption="Slider 5" ID="13" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="True" X="207" Y="4" Width="45" Height="105"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Input ID="0" Universe="4" Channel="52"/>
+     <SliderMode ValueDisplayStyle="Exact">Level</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="0">
+      <Channel Fixture="1">0</Channel>
+     </Level>
+    </Slider>
+    <Slider Caption="Slider 1" ID="9" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="True" X="4" Y="4" Width="45" Height="105" Z="-1"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Input ID="0" Universe="4" Channel="48"/>
+     <SliderMode ValueDisplayStyle="Exact">Level</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="4">
+      <Channel Fixture="1">0</Channel>
+      <Channel Fixture="2">0</Channel>
+     </Level>
+    </Slider>
+    <Slider Caption="Slider 3" ID="11" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="True" X="105" Y="4" Width="45" Height="105"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Input ID="0" Universe="4" Channel="50"/>
+     <SliderMode ValueDisplayStyle="Exact">Level</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="0">
+      <Channel Fixture="1">0</Channel>
+      <Channel Fixture="2">2</Channel>
+     </Level>
+    </Slider>
+    <Slider Caption="Slider 8" ID="16" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="True" X="358" Y="4" Width="45" Height="105"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Input ID="0" Universe="4" Channel="55"/>
+     <SliderMode ValueDisplayStyle="Exact">Level</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="0">
+      <Channel Fixture="1">0</Channel>
+     </Level>
+    </Slider>
+    <Slider Caption="Slider 9" ID="17" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="True" X="407" Y="0" Width="45" Height="105"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Input ID="0" Universe="4" Channel="56"/>
+     <SliderMode ValueDisplayStyle="Percentage">Level</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="0">
+      <Channel Fixture="1">0</Channel>
+     </Level>
+    </Slider>
+    <Slider Caption="Slider 2" ID="10" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="True" X="55" Y="4" Width="45" Height="105"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Input ID="0" Universe="4" Channel="49"/>
+     <SliderMode ValueDisplayStyle="Exact">Level</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="0">
+      <Channel Fixture="1">0</Channel>
+      <Channel Fixture="2">1</Channel>
+     </Level>
+    </Slider>
+    <Slider Caption="Slider 7" ID="15" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="True" X="308" Y="4" Width="45" Height="105"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Input ID="0" Universe="4" Channel="54"/>
+     <SliderMode ValueDisplayStyle="Exact">Level</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="0">
+      <Channel Fixture="1">0</Channel>
+     </Level>
     </Slider>
    </Frame>
-   <Frame Caption="Frame Buttons" ID="78">
-    <WindowState Visible="True" X="7" Y="0" Width="1299" Height="608"/>
+   <Frame Caption="Right Buttons" ID="19">
+    <Appearance>
+     <BackgroundColor>4282664004</BackgroundColor>
+    </Appearance>
+    <WindowState Visible="True" X="409" Y="0" Width="27" Height="253"/>
     <AllowResize>True</AllowResize>
     <ShowHeader>False</ShowHeader>
-    <ShowEnableButton>True</ShowEnableButton>
+    <ShowEnableButton>False</ShowEnableButton>
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
-    <Button Caption="Button 84" ID="83">
-     <WindowState Visible="True" X="165" Y="457" Width="158" Height="72"/>
+    <Button Caption="Select" ID="147">
+     <WindowState Visible="True" X="4" Y="115" Width="18" Height="18"/>
      <Appearance>
       <BackgroundColor>4282664004</BackgroundColor>
      </Appearance>
-     <Function ID="4294967295"/>
+     <Function ID="84"/>
      <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="244" LowerValue="1" UpperValue="2"/>
     </Button>
-    <Button Caption="Button 133" ID="132">
-     <WindowState Visible="True" X="327" Y="306" Width="158" Height="72"/>
+    <Button Caption="Solo" ID="144">
+     <WindowState Visible="True" X="4" Y="31" Width="18" Height="18"/>
      <Appearance>
       <BackgroundColor>4282664004</BackgroundColor>
      </Appearance>
-     <Function ID="4294967295"/>
+     <Function ID="81"/>
      <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="241" LowerValue="1" UpperValue="2"/>
     </Button>
-    <Button Caption="Button 122" ID="121">
-     <WindowState Visible="True" X="327" Y="230" Width="158" Height="72"/>
+    <Button Caption="Mute" ID="145">
+     <WindowState Visible="True" X="4" Y="59" Width="18" Height="18"/>
      <Appearance>
       <BackgroundColor>4282664004</BackgroundColor>
      </Appearance>
-     <Function ID="4294967295"/>
+     <Function ID="82"/>
      <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="242" LowerValue="1" UpperValue="2"/>
     </Button>
-    <Button Caption="Button 137" ID="136">
-     <WindowState Visible="True" X="327" Y="381" Width="158" Height="72"/>
+    <Button Caption="Drum" ID="148">
+     <WindowState Visible="True" X="4" Y="142" Width="18" Height="18"/>
      <Appearance>
       <BackgroundColor>4282664004</BackgroundColor>
      </Appearance>
-     <Function ID="4294967295"/>
+     <Function ID="85"/>
      <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="245" LowerValue="1" UpperValue="2"/>
     </Button>
-    <Button Caption="Button 134" ID="133">
-     <WindowState Visible="True" X="651" Y="306" Width="158" Height="72"/>
+    <Button Caption="Shift" ID="151">
+     <WindowState Visible="True" X="4" Y="225" Width="18" Height="18"/>
      <Appearance>
       <BackgroundColor>4282664004</BackgroundColor>
      </Appearance>
-     <Function ID="4294967295"/>
+     <Function ID="88"/>
      <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="250" LowerValue="1" UpperValue="0"/>
     </Button>
-    <Button Caption="Button 96" ID="95">
-     <WindowState Visible="True" X="3" Y="532" Width="158" Height="72"/>
+    <Button Caption="Rec Arm" ID="146">
+     <WindowState Visible="True" X="4" Y="87" Width="18" Height="18"/>
      <Appearance>
       <BackgroundColor>4282664004</BackgroundColor>
      </Appearance>
-     <Function ID="4294967295"/>
+     <Function ID="83"/>
      <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="243" LowerValue="1" UpperValue="2"/>
     </Button>
-    <Button Caption="Button 127" ID="126">
-     <WindowState Visible="True" X="489" Y="381" Width="158" Height="72"/>
+    <Button Caption="Note" ID="149">
+     <WindowState Visible="True" X="4" Y="170" Width="18" Height="18"/>
      <Appearance>
       <BackgroundColor>4282664004</BackgroundColor>
      </Appearance>
-     <Function ID="4294967295"/>
+     <Function ID="86"/>
      <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="246" LowerValue="1" UpperValue="2"/>
     </Button>
-    <Button Caption="Button 94" ID="93">
-     <WindowState Visible="True" X="3" Y="457" Width="158" Height="72"/>
+    <Button Caption="Clip Stop" ID="143">
+     <WindowState Visible="True" X="4" Y="4" Width="18" Height="18"/>
      <Appearance>
       <BackgroundColor>4282664004</BackgroundColor>
      </Appearance>
-     <Function ID="4294967295"/>
+     <Function ID="80"/>
      <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="240" LowerValue="1" UpperValue="2"/>
     </Button>
-    <Button Caption="Button 141" ID="140">
-     <WindowState Visible="True" X="489" Y="3" Width="158" Height="72"/>
+    <Button Caption="Stop All Clips" ID="150">
+     <WindowState Visible="True" X="4" Y="197" Width="18" Height="18"/>
      <Appearance>
       <BackgroundColor>4282664004</BackgroundColor>
      </Appearance>
-     <Function ID="4294967295"/>
+     <Function ID="87"/>
      <Action>Toggle</Action>
-     <Input ID="0" Universe="4" Channel="187" LowerValue="82" UpperValue="82" LowerParams="1" UpperParams="6" MonitorParams="6"/>
-    </Button>
-    <Button Caption="Button 100" ID="99">
-     <WindowState Visible="True" X="975" Y="3" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-     <Input ID="0" Universe="4" Channel="190" LowerValue="1" UpperValue="26" LowerParams="6" UpperParams="6" MonitorParams="6"/>
-    </Button>
-    <Button Caption="Button 103" ID="102">
-     <WindowState Visible="True" X="1137" Y="3" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-     <Input ID="0" Universe="4" Channel="191" LowerValue="1" UpperValue="26" LowerParams="6" UpperParams="6" MonitorParams="6"/>
-    </Button>
-    <Button Caption="Button 104" ID="103">
-     <WindowState Visible="True" X="1137" Y="154" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Button 118" ID="117">
-     <WindowState Visible="True" X="975" Y="79" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Button 112" ID="111">
-     <WindowState Visible="True" X="975" Y="457" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Button 88" ID="87">
-     <WindowState Visible="True" X="3" Y="79" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Button 82" ID="81">
-     <WindowState Visible="True" X="165" Y="306" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Button 119" ID="118">
-     <WindowState Visible="True" X="975" Y="154" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Button 117" ID="116">
-     <WindowState Visible="True" X="813" Y="532" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="New Scene 0" ID="94">
-     <WindowState Visible="True" X="3" Y="3" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="3"/>
-     <Action>Toggle</Action>
-     <Input ID="0" Universe="4" Channel="184" LowerValue="10" UpperValue="10" LowerParams="0" UpperParams="6" MonitorParams="6"/>
-    </Button>
-    <Button Caption="Button 87" ID="86">
-     <WindowState Visible="True" X="165" Y="154" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Button 85" ID="84">
-     <WindowState Visible="True" X="165" Y="532" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Button 98" ID="97">
-     <WindowState Visible="True" X="1137" Y="457" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="New Scene 1" ID="92">
-     <WindowState Visible="True" X="165" Y="3" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4"/>
-     <Action>Toggle</Action>
-     <Input ID="0" Universe="4" Channel="185" LowerValue="34" UpperValue="34" LowerParams="0" UpperParams="6" MonitorParams="6"/>
-    </Button>
-    <Button Caption="Button 120" ID="119">
-     <WindowState Visible="True" X="975" Y="306" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Button 139" ID="138">
-     <WindowState Visible="True" X="489" Y="79" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Button 130" ID="129">
-     <WindowState Visible="True" X="651" Y="230" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Button 126" ID="125">
-     <WindowState Visible="True" X="489" Y="457" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Button 116" ID="115">
-     <WindowState Visible="True" X="975" Y="532" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Button 110" ID="109">
-     <WindowState Visible="True" X="813" Y="306" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Button 89" ID="88">
-     <WindowState Visible="True" X="3" Y="306" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Button 101" ID="100">
-     <WindowState Visible="True" X="813" Y="79" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="New Scene 1" ID="79">
-     <WindowState Visible="True" X="327" Y="3" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="2"/>
-     <Action>Toggle</Action>
-     <Input ID="0" Universe="4" Channel="186" LowerValue="26" UpperValue="26" LowerParams="0" UpperParams="6" MonitorParams="6"/>
-    </Button>
-    <Button Caption="Button 102" ID="101">
-     <WindowState Visible="True" X="813" Y="154" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Button 136" ID="135">
-     <WindowState Visible="True" X="651" Y="381" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Button 105" ID="104">
-     <WindowState Visible="True" X="1137" Y="381" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Button 81" ID="80">
-     <WindowState Visible="True" X="165" Y="230" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Button 131" ID="130">
-     <WindowState Visible="True" X="489" Y="532" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Button 123" ID="122">
-     <WindowState Visible="True" X="327" Y="532" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Button 111" ID="110">
-     <WindowState Visible="True" X="1137" Y="79" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Button 90" ID="89">
-     <WindowState Visible="True" X="3" Y="154" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Button 115" ID="114">
-     <WindowState Visible="True" X="1137" Y="306" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Button 129" ID="128">
-     <WindowState Visible="True" X="489" Y="154" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Button 83" ID="82">
-     <WindowState Visible="True" X="165" Y="381" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Button 138" ID="137">
-     <WindowState Visible="True" X="651" Y="457" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Button 132" ID="131">
-     <WindowState Visible="True" X="651" Y="3" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-     <Input ID="0" Universe="4" Channel="188" LowerValue="1" UpperValue="26" LowerParams="6" UpperParams="6" MonitorParams="6"/>
-    </Button>
-    <Button Caption="Button 143" ID="142">
-     <WindowState Visible="True" X="489" Y="230" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Button 114" ID="113">
-     <WindowState Visible="True" X="813" Y="381" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Button 108" ID="107">
-     <WindowState Visible="True" X="813" Y="457" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Button 99" ID="98">
-     <WindowState Visible="True" X="1137" Y="532" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Button 135" ID="134">
-     <WindowState Visible="True" X="651" Y="79" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Button 128" ID="127">
-     <WindowState Visible="True" X="651" Y="154" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Button 107" ID="106">
-     <WindowState Visible="True" X="813" Y="230" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Button 113" ID="112">
-     <WindowState Visible="True" X="1137" Y="230" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Button 121" ID="120">
-     <WindowState Visible="True" X="975" Y="381" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Button 109" ID="108">
-     <WindowState Visible="True" X="813" Y="3" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-     <Input ID="0" Universe="4" Channel="189" LowerValue="1" UpperValue="26" LowerParams="6" UpperParams="6" MonitorParams="6"/>
-    </Button>
-    <Button Caption="Button 124" ID="123">
-     <WindowState Visible="True" X="327" Y="457" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Button 142" ID="141">
-     <WindowState Visible="True" X="327" Y="154" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Button 106" ID="105">
-     <WindowState Visible="True" X="975" Y="230" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Button 86" ID="85">
-     <WindowState Visible="True" X="165" Y="79" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Button 97" ID="96">
-     <WindowState Visible="True" X="651" Y="532" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Button 92" ID="91">
-     <WindowState Visible="True" X="3" Y="230" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Button 91" ID="90">
-     <WindowState Visible="True" X="3" Y="381" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Button 140" ID="139">
-     <WindowState Visible="True" X="327" Y="79" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Button 125" ID="124">
-     <WindowState Visible="True" X="489" Y="306" Width="158" Height="72"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
+     <Input ID="0" Universe="4" Channel="247" LowerValue="1" UpperValue="2"/>
     </Button>
    </Frame>
-   <Button Caption="Button 1" ID="0">
-    <WindowState Visible="True" X="1765" Y="176" Width="199" Height="199"/>
-    <Appearance>
-     <BackgroundColor>4282664004</BackgroundColor>
-    </Appearance>
-    <Function ID="4294967295"/>
-    <Action>Blackout</Action>
-    <Input ID="0" Universe="4" Channel="240" LowerValue="1" UpperValue="2"/>
-   </Button>
-   <Button Caption="Button 2" ID="1">
-    <WindowState Visible="True" X="1659" Y="459" Width="199" Height="199"/>
-    <Appearance>
-     <BackgroundColor>4282664004</BackgroundColor>
-    </Appearance>
-    <Function ID="4294967295"/>
-    <Action>Blackout</Action>
-    <Input ID="0" Universe="4" Channel="241" LowerValue="1" UpperValue="2"/>
-   </Button>
-   <Label Caption="httpskernel-machine.github.iomagicjs" ID="2">
-    <WindowState Visible="True" X="1335" Y="824" Width="392" Height="78"/>
-   </Label>
   </Frame>
  </VirtualConsole>
 </Workspace>
